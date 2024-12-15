@@ -11,14 +11,13 @@ const Destinations = () => {
     {
       name: "Dal Lake",
       image:
-        "https://lh5.googleusercontent.com/p/AF1QipMYNDzdv2hYnJoDKt0ltCIQQgLLJ7W_39cq_bCj=w1080-h624-n-k-no",
+        "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSK_6hCnobRdY2fYeMG_sKGKbTrp9DzF12jXLazWmGpT3cXYa06uYq8vk7DZqViJaigcqJgtxSRs4ieHo6nFTXpw-yrJcO_XAhem6mm0Q",
       description:
         "A stunning freshwater lake in Srinagar, known for its houseboats and Shikara rides.",
     },
     {
       name: "Gulmarg",
-      image:
-        "https://lh5.googleusercontent.com/p/AF1QipMYNDzdv2hYnJoDKt0ltCIQQgLLJ7W_39cq_bCj=w1080-h624-n-k-no",
+      image:"https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQOtsllVXlKlI0tPCotu0zN8Ln5puFNsCob9j663aCnekToLfdDx9Tu21RW037M42NrY7ewtl07BxuVbdWopEJCwaP7JOn7slFshx7mZA",
       description:
         "A famous ski resort in Kashmir, known for its snowy landscapes and ski slopes.",
     },
