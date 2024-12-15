@@ -31,14 +31,14 @@ const Destinations = () => {
     {
       name: "Pahalgam",
       image:
-        "https://lh5.googleusercontent.com/p/AF1QipMYNDzdv2hYnJoDKt0ltCIQQgLLJ7W_39cq_bCj=w1080-h624-n-k-no",
+        "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQJIvQpHUKIk0olqxEfhJNhn547qw7IQ9NIy22Grfjmi_-JAy4petzvnNZ7STYO3bWQGzdAI3_YGLv-zPPm0UcmDv28XlRuZCMtt-aycw",
       description:
         "A beautiful town located in the Anantnag district, known for its lush meadows and scenic views.",
     },
     {
       name: "Nubra Valley",
       image:
-        "https://lh5.googleusercontent.com/p/AF1QipMYNDzdv2hYnJoDKt0ltCIQQgLLJ7W_39cq_bCj=w1080-h624-n-k-no",
+        "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTI2C9dQ8EKHl3zX3yZ8IiwoNMA5samm23cOKjR6u64rhZisoL3CD481wdnoAldc_MLJnZbPF1id4fsMDYRY2GSsgh8d1TFrXrYZ4oGiQ",
       description:
         "A valley known for its sand dunes, monasteries, and picturesque landscapes.",
     },
