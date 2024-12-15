@@ -10,20 +10,21 @@ const Footer = () => {
         <ContactInfo>
           <p>
             <FaPhoneAlt />
-            <a href="tel:+917829881674">+91 7829881674</a>
+            <a href="tel:+917829881674">+91 8491926174</a>
           </p>
           <p>
             <FaEnvelope />
-            <a href="mailto:navee1110@gmail.com">navee1110@gmail.com</a>
+            <a href="mailto:navee1110@gmail.com">hamsafrantravels@gmail.com</a>
           </p>
         </ContactInfo>
         <SocialLinks>
+        <a href="https://www.instagram.com/hamsafran_travels?igsh=MW9sZTRtbTVxYjN1cQ==" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
           <a href="https://www.facebook.com/your-profile" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
             <FaFacebook />
           </a>
-          <a href="https://www.instagram.com/your-profile" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
+         
           <a href="https://www.twitter.com/your-profile" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
             <FaTwitter />
           </a>
