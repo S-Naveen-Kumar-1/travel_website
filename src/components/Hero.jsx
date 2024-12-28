@@ -1,193 +1,74 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
 
 const Hero = () => {
   return (
-    <HeroContainer id="hero">
-      <HeroSection>
-        <Content>
-          <Title>Explore the Beauty of Kashmir</Title>
-          <Description>
-            Discover breathtaking landscapes, serene lakes, and pristine meadows.
-          </Description>
-        </Content>
+    <div
+      id="hero"
+      className="relative h-screen overflow-hidden bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQD4_UDQcdSgY1XdUJSqfHKkI4WJsYSPaJdIkJuoXoL1gNOO6d0yMwTap3-yUnWX3QdUIo70rjUbVIqYqdqViJaHVgleZsaP62lAOcwUA')",
+      }}
+    >
+      <section className="h-full flex flex-col justify-center items-center  text-center p-8 z-10">
+        <div className="max-w-4xl w-full mb-12 text-center sm:mb-20 xs:mb-24">
+          <h1 className="text-4xl font-bold mb-4 sm:text-3xl text-white">
+            Explore the Beauty of Kashmir
+          </h1>
+          <p className="text-xl mb-8 sm:text-lg sm:mb-12 xs:text-base xs:mb-16 text-white">
+            Discover breathtaking landscapes, serene lakes, and pristine
+            meadows.
+          </p>
+        </div>
 
         {/* Search Input Box at the bottom */}
-        <SearchBox>
-          <SearchInput>
-            <Dropdown>
-              <option value="">Select Destination</option>
-              <option value="Srinagar">Srinagar</option>
-              <option value="Gulmarg">Gulmarg</option>
-              <option value="Pahalgam">Pahalgam</option>
-              <option value="Leh">Leh</option>
-            </Dropdown>
-            <DateInput type="date" />
-            <NumberInput type="number" min="1" max="10" placeholder="Number of Persons" />
-            <SearchButton>Book</SearchButton>
-          </SearchInput>
-        </SearchBox>
-      </HeroSection>
-    </HeroContainer>
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-80 p-6 rounded-lg flex flex-wrap justify-center items-center gap-6 max-w-4xl w-11/12 sm:bottom-8 xs:bottom-1">
+  <div className="flex flex-wrap gap-6 w-full justify-center sm:gap-4 xs:gap-4">
+    {/* Destination Select */}
+    <div className="w-full sm:w-[200px]">
+      <select className="p-3 text-base border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <option value="" disabled selected className="text-gray-500">
+          Select Destination
+        </option>
+        <option value="Srinagar">Srinagar</option>
+        <option value="Gulmarg">Gulmarg</option>
+        <option value="Pahalgam">Pahalgam</option>
+        <option value="Leh">Leh</option>
+      </select>
+    </div>
+
+    {/* Check-in Date */}
+    <div className="w-full sm:w-[200px]">
+      <input
+        type="date"
+        className="p-3 text-base border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        title="Select a date"
+      />
+    </div>
+
+    {/* Number of Persons */}
+    <div className="w-full sm:w-[200px]">
+      <input
+        type="number"
+        min="1"
+        max="10"
+        placeholder="Number of Persons"
+        className="p-3 text-base border border-gray-300 rounded-md w-full placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
+
+    {/* Book Button */}
+    <div className="w-full sm:w-auto">
+      <button className="px-6 py-3 text-lg bg-blue-600 text-white rounded-md cursor-pointer transition-colors duration-300 hover:bg-blue-500 w-full sm:w-[150px]">
+        Book
+      </button>
+    </div>
+  </div>
+</div>
+
+      </section>
+    </div>
   );
 };
 
 export default Hero;
-
-// Styled Components
-
-const HeroContainer = styled.div`
-  position: relative;
-  height: 100vh; /* Full screen */
-  overflow: hidden;
-  background-image: url('https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQD4_UDQcdSgY1XdUJSqfHKkI4WJsYSPaJdIkJuoXoL1gNOO6d0yMwTap3-yUnWX3QdUIo70rjUbVIqYqdqViJaHVgleZsaP62lAOcwUA');
-  background-size: cover;
-  background-position: center;
-`;
-
-const HeroSection = styled.section`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Vertically centers content */
-  align-items: center; /* Horizontally centers content */
-  color: #fff;
-  text-align: center;
-  padding: 2rem;
-  z-index: 1;
-`;
-
-const Content = styled.div`
-  max-width: 800px;
-  width: 100%;
-  margin-bottom: 3rem; /* Space for the search box */
-  text-align: center;
-
-  @media (max-width: 768px) {
-    margin-bottom: 5rem; /* Increase space for mobile */
-  }
-
-  @media (max-width: 425px) {
-    margin-bottom: 6rem; /* Increase space for very small screens */
-  }
-`;
-
-const Title = styled.h1`
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  font-family: 'Poppins', sans-serif;
-
-  @media (max-width: 768px) {
-    font-size: 2.5rem;
-  }
-`;
-
-const Description = styled.p`
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
-    margin-bottom: 3rem; /* Add extra space below the text */
-  }
-
-  @media (max-width: 425px) {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    margin-bottom: 4rem; /* Increase space for very small screens */
-  }
-`;
-
-const SearchBox = styled.div`
-  position: absolute;
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 1.5rem;
-  border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  max-width: 800px;
-  width: 90%;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 1rem;
-    bottom: 2rem; /* Adjust bottom position for mobile */
-  }
-
-  @media (max-width: 425px) {
-    bottom: 0.25rem; /* Further reduce bottom for very small screens */
-  }
-`;
-
-const SearchInput = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-`;
-
-const Dropdown = styled.select`
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  flex: 1;
-  min-width: 150px;
-
-  @media (max-width: 768px) {
-    width: 100%; /* Ensure full width on mobile */
-  }
-`;
-
-const DateInput = styled.input`
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  flex: 1;
-  min-width: 150px;
-
-  @media (max-width: 768px) {
-    width: 100%; /* Ensure full width on mobile */
-  }
-`;
-
-const NumberInput = styled.input`
-  padding: 0.8rem;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  flex: 1;
-  min-width: 150px;
-
-  @media (max-width: 768px) {
-    width: 100%; /* Ensure full width on mobile */
-  }
-`;
-
-const SearchButton = styled.button`
-  padding: 0.8rem 2rem;
-  font-size: 1.2rem;
-  background-color: #4f89e3;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #3a70c4;
-  }
-
-  @media (max-width: 768px) {
-    width: 100%; /* Full width on mobile */
-  }
-`;

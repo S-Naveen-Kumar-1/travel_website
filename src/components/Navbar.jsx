@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link as ScrollLink } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolledPastHero, setIsScrolledPastHero] = useState(false);
+  const [navbarHeight, setNavbarHeight] = useState(0);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -22,6 +22,11 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    const navbar = document.getElementById("navbar");
+    if (navbar) {
+      setNavbarHeight(navbar.offsetHeight);
+    }
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -29,113 +34,80 @@ const Navbar = () => {
   }, []);
 
   return (
-    <Nav $isScrolledPastHero={isScrolledPastHero}>
-      <Logo>Hamsafran Travels</Logo>
-      <Hamburger onClick={toggleMenu}>
-        {isOpen ? <FaTimes /> : <FaBars />}
-      </Hamburger>
-      <Menu $isOpen={isOpen}>
-        <ScrollLink to="home" smooth={true} duration={800}>
-          <MenuItem>Home</MenuItem>
-        </ScrollLink>
-        <ScrollLink to="destinations" smooth={true} duration={800}>
-          <MenuItem>Destinations</MenuItem>
-        </ScrollLink>
-        <ScrollLink to="about" smooth={true} duration={800}>
-          <MenuItem>About</MenuItem>
-        </ScrollLink>
-        <ScrollLink to="contact" smooth={true} duration={800}>
-          <MenuItem>Contact</MenuItem>
-        </ScrollLink>
-      </Menu>
-    </Nav>
+    <nav
+      id="navbar"
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300  bg-black bg-opacity-90 shadow-md p-[20px]`}
+    >
+      <div className="container mx-auto px-4 flex justify-between items-center py-4">
+        {/* Logo */}
+        <h1 className="text-2xl lg:text-3xl font-bold text-orange-500 font-poppins cursor-pointer">
+          Hamsafran Travels
+        </h1>
+
+        {/* Hamburger Icon (Mobile) */}
+        <div
+          className="md:hidden text-3xl text-orange-500 cursor-pointer"
+          onClick={toggleMenu}
+        >
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </div>
+
+        {/* Menu */}
+        <div
+          className={`md:flex md:items-center md:gap-6 fixed md:static top-0 right-0 left-0 bg-gray-800 md:bg-transparent w-full md:w-auto h-screen md:h-auto transition-transform duration-300 ${
+            isOpen ? "translate-x-0" : "translate-x-full md:translate-x-0"
+          }`}
+        >
+          {/* Menu Items */}
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `block text-gray-200 hover:text-orange-500 py-4 md:py-0 text-center md:text-left text-xl md:text-2xl lg:text-3xl cursor-pointer ${
+                isActive ? "text-orange-500" : "text-gray-200"
+              }`
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/all-destinations"
+            className={({ isActive }) =>
+              `block text-gray-200 hover:text-orange-500 py-4 md:py-0 text-center md:text-left text-lg md:text-xl lg:text-2xl cursor-pointer ${
+                isActive ? "text-orange-500" : "text-gray-200"
+              }`
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            Destinations
+          </NavLink>
+        
+          <NavLink
+            to="/all-hotels"
+            className={({ isActive }) =>
+              `block text-gray-200 hover:text-orange-500 py-4 md:py-0 text-center md:text-left text-lg md:text-xl lg:text-2xl cursor-pointer ${
+                isActive ? "text-orange-500" : "text-gray-200"
+              }`
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            Hotels
+          </NavLink>
+          <NavLink
+            to="/all-packages"
+            className={({ isActive }) =>
+              `block text-gray-200 hover:text-orange-500 py-4 md:py-0 text-center md:text-left text-lg md:text-xl lg:text-2xl cursor-pointer ${
+                isActive ? "text-orange-500" : "text-gray-200"
+              }`
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            Packages
+          </NavLink>
+        </div>
+      </div>
+    </nav>
   );
 };
 
 export default Navbar;
-
-// Styled Components
-
-const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: ${({ $isScrolledPastHero }) =>
-    $isScrolledPastHero ? "rgba(0, 0, 0, 0.9)" : "transparent"};
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: ${({ $isScrolledPastHero }) =>
-    $isScrolledPastHero ? "0 4px 6px rgba(0, 0, 0, 0.3)" : "none"};
-  transition: background-color 0.3s ease;
-
-  @media (max-width: 768px) {
-    padding: 1rem;
-  }
-`;
-
-const Logo = styled.h1`
-  font-size: 1.8rem;
-  color: #ff5733;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-`;
-
-const Hamburger = styled.div`
-  display: none;
-  font-size: 2rem;
-  color: #ff5733;
-  cursor: pointer;
-  margin-right: 30px;
-
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-`;
-
-const Menu = styled.div`
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-  margin-right: 100px;
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: ${({ $isOpen }) => ($isOpen ? "0" : "-100%")};
-    background-color: #1e293b;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    transform: ${({ $isOpen }) => ($isOpen ? "translateX(0)" : "translateX(100%)")};
-    opacity: ${({ $isOpen }) => ($isOpen ? "1" : "0")};
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    z-index: 1001;
-  }
-`;
-
-const MenuItem = styled.div`
-  color: #f1f5f9;
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-  cursor: pointer;
-
-  &:hover {
-    color: #ff5733;
-  }
-
-  @media (max-width: 768px) {
-    padding: 1rem 0;
-    width: 100%;
-    text-align: center;
-  }
-`;
