@@ -66,6 +66,7 @@ const foodItems = [
     unit: "per 10 grams",
     imageUrl: "https://via.placeholder.com/200?text=Shilajit", // Replace with actual image URL if available
     description: "Pure and natural Kashmiri Shilajit, known for its health benefits.",
+    path:Shilajit
 
   },
   {
@@ -76,7 +77,7 @@ const foodItems = [
     unit: "per piece",
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAS9FyIG0G7IKlyljCAG4gI5hJ8jat8yMjsQ&s",
     description: "Soft and fluffy tandoori roti, perfect with curries.",
-    path:Shilajit
+  
   },
   {
     id: 7,
