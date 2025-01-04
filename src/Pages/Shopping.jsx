@@ -5,6 +5,9 @@ import Almonds from '../../src/assets/shopping/Almonds.jpeg';
 import Anjoor from '../../src/assets/shopping/anjoor.jpeg';
 import Raisins from '../../src/assets/shopping/raisins.jpeg';
 import Walnut from '../../src/assets/shopping/walnut.jpeg';
+import driedKiwi from '../../src/assets/shopping/driedKiwi.jpeg';
+import pista from '../../src/assets/shopping/pista.jpeg';
+import Shilajit from '../../src/assets/shopping/Shilajit.jpeg';
 
 const foodItems = [
   {
@@ -43,7 +46,7 @@ const foodItems = [
     category: "Beverages",
     price: 200,
     unit: "per pack",
-    imageUrl: "https://via.placeholder.com/200?text=Kehwa",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_TDNe0UJnTKJYMgeMe2oQIOMUrTKVSk4uA&s",
     description: "Traditional Kashmiri kehwa tea mix.",
   },
   {
@@ -52,8 +55,18 @@ const foodItems = [
     category: "Bakery",
     price: 150,
     unit: "per piece",
-    imageUrl: "https://via.placeholder.com/200?text=Shirmal",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx6e7DqeyS8z8bZDOzP6QJfu0dhaPUaUinzQ&s",
     description: "Soft and delicious Kashmiri shirmal bread.",
+  },
+  {
+    id: 19,
+    name: "Kashmiri Shilajit",
+    category: "Health Supplements",
+    price: 1000,
+    unit: "per 10 grams",
+    imageUrl: "https://via.placeholder.com/200?text=Shilajit", // Replace with actual image URL if available
+    description: "Pure and natural Kashmiri Shilajit, known for its health benefits.",
+
   },
   {
     id: 6,
@@ -61,8 +74,9 @@ const foodItems = [
     category: "Bakery",
     price: 50,
     unit: "per piece",
-    imageUrl: "https://via.placeholder.com/200?text=Tandoori+Roti",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAS9FyIG0G7IKlyljCAG4gI5hJ8jat8yMjsQ&s",
     description: "Soft and fluffy tandoori roti, perfect with curries.",
+    path:Shilajit
   },
   {
     id: 7,
@@ -70,7 +84,7 @@ const foodItems = [
     category: "Bakery",
     price: 100,
     unit: "per piece",
-    imageUrl: "https://via.placeholder.com/200?text=Kulcha",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQLKm6rahJROq6nhsmWypypOjJbTPPVqsug&s",
     description:
       "A type of leavened bread, crispy and perfect for pairing with stews.",
   },
@@ -80,7 +94,7 @@ const foodItems = [
     category: "Desserts",
     price: 150,
     unit: "per serving",
-    imageUrl: "https://via.placeholder.com/200?text=Phirni",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRVjNL2wnesUI67BX9KFY3MPVXzRkF8v6jKg&s",
     description: "A creamy rice pudding flavored with cardamom and saffron.",
   },
   // Additional Beverages
@@ -90,7 +104,7 @@ const foodItems = [
     category: "Beverages",
     price: 150,
     unit: "per cup",
-    imageUrl: "https://via.placeholder.com/200?text=Noon+Chai",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReqpVi-3dU-bhSVjmWGU2GWijbeNBMQnchQw&s",
     description: "A salty pink tea, traditionally served in Kashmir.",
   },
   {
@@ -99,18 +113,10 @@ const foodItems = [
     category: "Beverages",
     price: 120,
     unit: "per bottle",
-    imageUrl: "https://via.placeholder.com/200?text=Rose+Sherbet",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfgNCvNgnTDGBEI7zNUFwVV4-kdIippGPjw&s",
     description: "A refreshing and aromatic rose-based drink.",
   },
-  {
-    id: 11,
-    name: "Kashmiri Pomegranate Juice",
-    category: "Beverages",
-    price: 180,
-    unit: "per bottle",
-    imageUrl: "https://via.placeholder.com/200?text=Pomegranate+Juice",
-    description: "Fresh and tangy pomegranate juice, a Kashmiri specialty.",
-  },
+ 
   // Additional Dry Fruits
   {
     id: 12,
@@ -118,7 +124,7 @@ const foodItems = [
     category: "Dry Fruits",
     price: 500,
     unit: "per kg",
-    imageUrl: "https://via.placeholder.com/200?text=Dried+Apricots",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMjfpHsbDJ89EDQXmSTAdMIRNQDX43UCzsrg&s",
     description: "Sweet and tart dried apricots from the valleys of Kashmir.",
   },
   {
@@ -137,7 +143,7 @@ const foodItems = [
     category: "Dry Fruits",
     price: 600,
     unit: "per kg",
-    imageUrl: "https://via.placeholder.com/200?text=Cashews",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTeFALaca0uR7pSu7DF4-q1DOA73QbEiaJQ&s",
     description: "Premium Kashmiri cashews, rich and buttery.",
   },
   // Additional Bakery Items
@@ -147,7 +153,7 @@ const foodItems = [
     category: "Bakery",
     price: 120,
     unit: "per piece",
-    imageUrl: "https://via.placeholder.com/200?text=Sheermal",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZnzG5sNNLg1y5eKSU7HFwBzYcS17NdpYew&s",
     description:
       "A soft, sweet bread, traditionally served with Kashmiri dishes.",
   },
@@ -157,32 +163,50 @@ const foodItems = [
     category: "Bakery",
     price: 100,
     unit: "per piece",
-    imageUrl: "https://via.placeholder.com/200?text=Bakarkhani",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILLxngWfi269kxojVmQzebIOffIcc2qbG3Q&s",
     description: "A crispy, layered bread, often served with tea.",
   },
   {
     id: 17,
-    name: "Kashmiri Methi Kebab",
-    category: "Bakery",
-    price: 250,
-    unit: "per pack",
-    imageUrl: "https://via.placeholder.com/200?text=Methi+Kebab",
-    description: "A savory, spiced bread made with fenugreek leaves.",
+    name: "Dried Kiwi",
+    category: "Dry Fruits",
+    price: 550,
+    unit: "per kg",
+    imageUrl: "https://via.placeholder.com/200?text=Dried+Kiwi", 
+    description: "Sweet and tangy dried kiwi, a healthy and delicious snack.",
+    path:driedKiwi,
+
   },
+  {
+    id: 18,
+    name: "Pista",
+    category: "Dry Fruits",
+    price: 600,
+    unit: "per kg",
+    imageUrl: "https://via.placeholder.com/200?text=Pista", 
+    description: "Premium quality pistachios, crunchy and rich in flavor.",
+    path:pista,
+
+  },
+
 ];
 
 const categories = [
   { name: "All", imageUrl: "https://via.placeholder.com/50?text=All" },
   {
     name: "Dry Fruits",
-    imageUrl: "https://via.placeholder.com/50?text=Dry+Fruits",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzATw3m0CM6USV8PkHuACjioMo7jPM88oR0g&s",
   },
-  { name: "Spices", imageUrl: "https://via.placeholder.com/50?text=Spices" },
+  { name: "Spices", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbtE0K1aSU2wKTQ30aRByFwY9WHFeZZc91IQ&s" },
   {
     name: "Beverages",
-    imageUrl: "https://via.placeholder.com/50?text=Beverages",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDvLIG5GBe1PT2psfMHFvCGw6HhZd60J96EQ&s",
   },
-  { name: "Bakery", imageUrl: "https://via.placeholder.com/50?text=Bakery" },
+  { name: "Bakery", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnNSG8hFcA-LpQHyMPiYBEmUc3PC21mbhwMg&s" },
+  {
+    name: "Health Supplements",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSHIj0lPRMTipJCc17vDnWDD04K3wtISKRsA&s", 
+  },
 ];
 
 const ShoppingPage = () => {
