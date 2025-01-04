@@ -10,7 +10,10 @@ const Footer = () => {
         <ContactInfo>
           <p>
             <FaPhoneAlt />
+            <a href="tel:+917829881674">+91 9596319497</a>
             <a href="tel:+917829881674">+91 8491926174</a>
+
+            
           </p>
           <p>
             <FaEnvelope />

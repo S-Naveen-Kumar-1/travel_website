@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS CSS styles
+import Footer from "../components/Footer";
 
 const hotels = [
   {
@@ -225,6 +226,7 @@ const Hotels = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

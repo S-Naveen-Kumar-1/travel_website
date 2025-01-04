@@ -5,6 +5,7 @@ import { AllBlogs } from './AllBlogs'
 import Hotels from './Hotels'
 import Destinations from './Destinations'
 import Packages from './Packages'
+import FoodItems from './Shopping'
 
 export const AllRoutes = () => {
   return (
@@ -14,6 +15,7 @@ export const AllRoutes = () => {
         <Route path='/all-hotels' element={<Hotels/>}></Route>
         <Route path='/all-destinations' element={<Destinations/>}></Route>
         <Route path='/all-packages' element={<Packages/>}></Route>
+        <Route path='/shopping' element={<FoodItems/>}></Route>
 
     </Routes>
   )
