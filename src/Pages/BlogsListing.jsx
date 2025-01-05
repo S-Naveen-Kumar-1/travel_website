@@ -1,8 +1,6 @@
 import Aos from "aos";
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
-// Sample blog data
 const blogs = [
   {
     id: 1,
@@ -133,13 +131,13 @@ const blogs = [
       Whether you're trekking through the rugged mountains, visiting ancient monasteries, or simply enjoying the tranquil beauty of the landscape, Leh-Ladakh offers an experience that is truly one of a kind.
     `,
     photos: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz1jF5gsJ6Vrd6q1A07gGuwFklk7ctDmy6fQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQBChJ-Rb2yRePGGuW3aQH-MRZLpnoi57TA&s",
       "https://via.placeholder.com/600x400?text=Pangong+Lake",
       "https://via.placeholder.com/600x400?text=Nubra+Valley",
     ],
-    authorName: "Deepika Padukone",
+    authorName: "Salman Khan",
     authorImage:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2a9EhzDjpXyKLRfR7wJtH9j7fZ0gdPfm38A&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHneBhCTBZSdmVaoVlPJsrsApOv8nnv-V30A&s",
     totalLikes: 175,
     comments: [
       {
@@ -169,13 +167,13 @@ const blogs = [
       Whether you're looking to explore the region's rich culture, embark on a challenging trek, or simply enjoy the tranquility of the landscape, Spiti Valley offers a unique and unforgettable experience.
     `,
     photos: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvc6UqXkU0XjYN0VZ6DNddY3rONwYw4h1ovXw&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvczAwlnKgAo5mkVoOCR4HzMUDdyxLLgpVPA&s",
       "https://via.placeholder.com/600x400?text=Key+Monastery",
       "https://via.placeholder.com/600x400?text=Spiti+Valley+Trekking",
     ],
-    authorName: "Katrina Kaif",
+    authorName: "Under Taker",
     authorImage:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg8FlGq7gH3wVxT_4F3gZmbJh5OUQO1OeZUw&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW_fbYYhIOwOhkXO7xj9KKYPWVzGoXdWpd1A&s",
     totalLikes: 210,
     comments: [
       {
@@ -192,7 +190,7 @@ const blogs = [
   },
 ];
 
-const Blogs = () => {
+const BlogListing = () => {
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -202,91 +200,59 @@ const Blogs = () => {
   }, []);
   const navigate = useNavigate();
 
-  const handleAllBlogs = () => {
-    navigate("/blogs");
-  };
   const handleBlogClick = (blog) => {
     navigate(`/blogs/${blog.id}`, { state: { blog } });
   };
+
   return (
     <div className="p-5 flex flex-col items-center justify-center w-[95%]">
-      <div className="p-4 flex flex-col items-center justify-center w-[90%]">
-        <h2 className="w-full text-left mb-4 font-bold">Travel Blogs</h2>
-        <div className="flex justify-between items-center w-full mb-5">
-          <p>Insights, tips, and stories to inspire your travels.</p>
-          <button
-            onClick={handleAllBlogs}
-            className="text-blue-500 hover:text-blue-700 underline focus:outline-none"
+      <h1 className="text-3xl font-bold mb-5">Travel Blogs</h1>
+      <p className="text-gray-600 mb-10">
+        Explore insights, tips, and stories about Kashmir's beauty and culture.
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px]">
+        {blogs.map((blog) => (
+          <div
+            key={blog.id}
+            onClick={() => handleBlogClick(blog)}
+            data-aos="fade-up"
+            className="flex flex-col items-center cursor-pointer p-4 shadow-lg rounded-lg hover:shadow-xl transition-shadow"
           >
-            View All Blogs
-          </button>
-        </div>
-      </div>
-
-      <div
-        className="flex flex-wrap justify-center items-start gap-5 mt-5 w-full max-w-[1200px]"
-      >
-        {/* Main Blog */}
-        <div
-          className="flex flex-col items-center justify-start text-center flex-1 max-w-[800px] mb-5 cursor-pointer"
-          onClick={() => handleBlogClick(blogs[0])}
-          data-aos="fade-right"
-        >
-          <img
-            src={blogs[0].photos[0]}
-            alt={blogs[0].title}
-            className="w-full h-auto rounded-lg"
-          />
-          <h3 className="my-2">{blogs[0].title}</h3>
-          <p className="text-gray-600 text-center my-2 line-clamp-5">
-            {blogs[0].description}
-          </p>
-          <div className="flex items-center mt-2 text-left w-full">
             <img
-              src={blogs[0].authorImage}
-              alt={blogs[0].authorName}
-              className="w-12 h-12 rounded-full mr-3"
+              src={blog.photos[0]}
+              alt={blog.title}
+              className="w-full h-48 object-cover rounded-lg mb-4"
             />
-            <span className="text-gray-600 text-lg">{blogs[0].authorName}</span>
-          </div>
-        </div>
+            <h2 className="text-xl font-semibold mb-2">{blog.title}</h2>
+            <p className="text-gray-600 line-clamp-3 text-center mb-4">
+              {blog.description}
+            </p>
 
-        {/* Side Blogs */}
-        <div className="flex flex-col gap-5 flex-1 max-w-[400px] items-center">
-          {blogs.slice(1, 3).map((blog) => (
-            <div
-              key={blog.id}
-              className="flex flex-col items-center justify-start cursor-pointer"
-              onClick={() => handleBlogClick(blog)}
-              data-aos="fade-up"
-            >
+            {/* Author Info */}
+            <div className="flex items-center mb-4">
               <img
-                src={blog.photos[0]}
-                alt={blog.title}
-                className="w-full h-auto rounded-lg"
+                src={blog.authorImage}
+                alt={blog.authorName}
+                className="w-10 h-10 object-cover rounded-full mr-3"
               />
-              <div className="px-2 flex flex-col justify-center items-center">
-                <h3 className="my-2">{blog.title}</h3>
-                <p className="text-gray-600 text-center my-2 line-clamp-5">
-                  {blog.description}
-                </p>
-                <div className="flex items-center mt-2 text-left w-full">
-                  <img
-                    src={blog.authorImage}
-                    alt={blog.authorName}
-                    className="w-12 h-12 rounded-full mr-3"
-                  />
-                  <span className="text-gray-600 text-lg">
-                    {blog.authorName}
-                  </span>
-                </div>
-              </div>
+              <span className="text-sm font-medium text-gray-700">
+                {blog.authorName}
+              </span>
             </div>
-          ))}
-        </div>
+
+            {/* Read Blog Button */}
+            <button
+              onClick={() => handleBlogClick(blog)}
+              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
+            >
+              Read Blog
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default Blogs;
+export default BlogListing;
