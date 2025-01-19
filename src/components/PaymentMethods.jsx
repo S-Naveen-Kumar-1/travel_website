@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PaymentMethods = ({ onPaymentSuccess, onPaymentFailure }) => {
+const PaymentMethods = () => {
   const [isProcessing, setIsProcessing] = useState(false);
 
   const handleDummyPayment = (method) => {
@@ -13,10 +13,10 @@ const PaymentMethods = ({ onPaymentSuccess, onPaymentFailure }) => {
 
       if (isSuccess) {
         alert(`Payment successful using ${method}`);
-        onPaymentSuccess({ method });
+        // onPaymentSuccess({ method });
       } else {
         alert(`Payment failed using ${method}`);
-        onPaymentFailure();
+        // onPaymentFailure();
       }
     }, 2000); // Simulate payment processing delay
   };
@@ -27,19 +27,19 @@ const PaymentMethods = ({ onPaymentSuccess, onPaymentFailure }) => {
       <div className="mb-4">
         <button
           className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 font-bold transition duration-200"
-          onClick={() => handleDummyPayment("Dummy Credit Card")}
+          onClick={() => handleDummyPayment("Credit Card")}
           disabled={isProcessing}
         >
-          {isProcessing ? "Processing..." : "Pay with Dummy Credit Card"}
+          {isProcessing ? "Processing..." : "Pay with Credit Card"}
         </button>
       </div>
       <div className="mb-4">
         <button
           className="w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-600 font-bold transition duration-200"
-          onClick={() => handleDummyPayment("Dummy PayPal")}
+          onClick={() => handleDummyPayment("PayPal")}
           disabled={isProcessing}
         >
-          {isProcessing ? "Processing..." : "Pay with Dummy PayPal"}
+          {isProcessing ? "Processing..." : "Pay with PayPal"}
         </button>
       </div>
     </div>

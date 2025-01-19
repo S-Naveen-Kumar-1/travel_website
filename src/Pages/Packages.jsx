@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Package from "../../src/assets/package.png"
+import BookingForm from "../components/PackageBookingForm";
 const packages = [
   {
     id: 1,
@@ -132,6 +133,8 @@ const Packages = () => {
   const [numDays, setNumDays] = useState(0);
   const [numPeople, setNumPeople] = useState(1);
   const [priceRange, setPriceRange] = useState([0, 50000]);
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const [selectedPackage, setSelectedPackage] = useState(null); 
 
   // Filter packages based on dynamic criteria
   const filteredPackages = packages.filter((pkg) => {
@@ -166,6 +169,13 @@ const Packages = () => {
     });
   }, []);
 
+  const handleBookPackage=(pkg)=>{
+    setSelectedPackage(pkg)
+    setIsFormOpen(true);
+  }
+  const handleCloseForm = () => {
+    setIsFormOpen(false);
+  };
   return (
     <div>
       {/* Banner Section with Form on Top */}
@@ -262,7 +272,7 @@ const Packages = () => {
                       <span className="text-xl font-semibold text-gray-800">
                         {pkg.price}
                       </span>
-                      <button className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                      <button onClick={()=>handleBookPackage(pkg)} className="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
                         Book Now
                       </button>
                     </div>
@@ -277,6 +287,12 @@ const Packages = () => {
           </div>
         </div>
       </div>
+      <BookingForm
+        isOpen={isFormOpen}
+        onClose={handleCloseForm}
+        selectedPackage={selectedPackage}
+     
+      />
     </div>
   );
 };

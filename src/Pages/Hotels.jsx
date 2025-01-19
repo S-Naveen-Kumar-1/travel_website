@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS CSS styles
 import Footer from "../components/Footer";
+import BookingForm from "../components/HotelBookingForm";
 
 const hotels = [
   {
     id: 1,
     name: "Hotel Ash vale",
-    imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/8b/3a/cc/front-view-of-hotel.jpg?w=500&h=-1&s=1",
+    imageUrl:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/8b/3a/cc/front-view-of-hotel.jpg?w=500&h=-1&s=1",
     price: "₹5,000/night",
     features: ["Free WiFi", "Mountain View", "Breakfast Included"],
     destination: "Gulmarg",
@@ -15,7 +17,8 @@ const hotels = [
   {
     id: 2,
     name: "Kashmir Valley Resort",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCWVNZEyln4HPSqdnYlA7Y9LZY4ziX4x1_A&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCWVNZEyln4HPSqdnYlA7Y9LZY4ziX4x1_A&s",
     price: "₹7,500/night",
     features: ["Spa Services", "Lake View", "Free Parking"],
     destination: "Kashmir",
@@ -23,7 +26,8 @@ const hotels = [
   {
     id: 3,
     name: "Hotel Mirage",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxg-9NG3NB_cgWtzfoceol51OQwP5TuAJCw&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxg-9NG3NB_cgWtzfoceol51OQwP5TuAJCw&s",
     price: "₹4,000/night",
     features: ["Pet Friendly", "Garden View", "Restaurant"],
     destination: "Srinagar",
@@ -31,7 +35,8 @@ const hotels = [
   {
     id: 4,
     name: "Snowy Peaks Inn",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF4vY131dhJKtAdr460sQ7FI3KXPBI0GHW4Q&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF4vY131dhJKtAdr460sQ7FI3KXPBI0GHW4Q&s",
     price: "₹6,000/night",
     features: ["Ski Access", "Heated Rooms", "Bar"],
     destination: "Pahalgam",
@@ -39,7 +44,8 @@ const hotels = [
   {
     id: 5,
     name: "Kashmir Heritage Hotel",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJuM60W9H2Up5Z4yKUvY3NkNiD1haD-3TNRA&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJuM60W9H2Up5Z4yKUvY3NkNiD1haD-3TNRA&s",
     price: "₹5,500/night",
     features: ["Free Parking", "Restaurant", "Mountain View"],
     destination: "Kupwara",
@@ -47,7 +53,8 @@ const hotels = [
   {
     id: 6,
     name: "Betaab Valley Retreat",
-    imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/1d/52/94/mirage-front-view.jpg?w=500&h=500&s=1",
+    imageUrl:
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/1d/52/94/mirage-front-view.jpg?w=500&h=500&s=1",
     price: "₹6,800/night",
     features: ["Mountain View", "Free Breakfast", "Restaurant"],
     destination: "Betaab Valley",
@@ -59,7 +66,17 @@ const Hotels = () => {
   const [checkOut, setCheckOut] = useState("");
   const [numPersons, setNumPersons] = useState(1);
   const [destination, setDestination] = useState("");
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const [selectedHotel, setSelectedHotel] = useState(null); 
 
+  const handleBookNowClick = (hotel) => {
+    setSelectedHotel(hotel)
+    setIsFormOpen(true);
+  };
+
+  const handleCloseForm = () => {
+    setIsFormOpen(false);
+  };
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
@@ -67,19 +84,19 @@ const Hotels = () => {
     });
   }, []);
 
-  const handleCheckInChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleCheckInChange = (e) => {
     setCheckIn(e.target.value);
   };
 
-  const handleCheckOutChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleCheckOutChange = (e) => {
     setCheckOut(e.target.value);
   };
 
-  const handleNumPersonsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleNumPersonsChange = (e) => {
     setNumPersons(Number(e.target.value));
   };
 
-  const handleDestinationChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleDestinationChange = (e) => {
     setDestination(e.target.value);
   };
 
@@ -115,7 +132,10 @@ const Hotels = () => {
             <div className="flex flex-col sm:flex-row justify-between gap-6">
               {/* Check-in */}
               <div className="flex-1 mb-4 sm:mb-0">
-                <label htmlFor="check-in" className="block text-lg text-gray-600">
+                <label
+                  htmlFor="check-in"
+                  className="block text-lg text-gray-600"
+                >
                   Check-in
                 </label>
                 <input
@@ -128,7 +148,10 @@ const Hotels = () => {
               </div>
               {/* Check-out */}
               <div className="flex-1 mb-4 sm:mb-0">
-                <label htmlFor="check-out" className="block text-lg text-gray-600">
+                <label
+                  htmlFor="check-out"
+                  className="block text-lg text-gray-600"
+                >
                   Check-out
                 </label>
                 <input
@@ -141,7 +164,10 @@ const Hotels = () => {
               </div>
               {/* Number of persons */}
               <div className="flex-1 mb-4 sm:mb-0">
-                <label htmlFor="num-persons" className="block text-lg text-gray-600">
+                <label
+                  htmlFor="num-persons"
+                  className="block text-lg text-gray-600"
+                >
                   Number of Persons
                 </label>
                 <input
@@ -157,7 +183,10 @@ const Hotels = () => {
 
             {/* Destination Filter */}
             <div className="mt-6">
-              <label htmlFor="destination" className="block text-lg text-gray-600">
+              <label
+                htmlFor="destination"
+                className="block text-lg text-gray-600"
+              >
                 Select Destination
               </label>
               <select
@@ -204,8 +233,12 @@ const Hotels = () => {
                     className="w-full h-64 object-cover"
                   />
                   <div className="p-6">
-                    <h3 className="text-2xl font-semibold text-gray-800">{hotel.name}</h3>
-                    <p className="text-xl font-bold text-blue-600 mt-2">{hotel.price}</p>
+                    <h3 className="text-2xl font-semibold text-gray-800">
+                      {hotel.name}
+                    </h3>
+                    <p className="text-xl font-bold text-blue-600 mt-2">
+                      {hotel.price}
+                    </p>
                     <ul className="mt-4 space-y-2 text-gray-600">
                       {hotel.features.map((feature, index) => (
                         <li key={index} className="flex items-center">
@@ -214,18 +247,29 @@ const Hotels = () => {
                         </li>
                       ))}
                     </ul>
-                    <button className="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200">
+                    <button
+                      onClick={()=>handleBookNowClick(hotel)}
+                      className="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200"
+                    >
                       Book Now
                     </button>
                   </div>
                 </div>
               ))
             ) : (
-              <p className="text-center text-gray-600">No hotels found for this destination.</p>
+              <p className="text-center text-gray-600">
+                No hotels found for this destination.
+              </p>
             )}
           </div>
         </div>
       </div>
+      <BookingForm
+        isOpen={isFormOpen}
+        onClose={handleCloseForm}
+        selectedHotel={selectedHotel}
+     
+      />
       <Footer />
     </div>
   );

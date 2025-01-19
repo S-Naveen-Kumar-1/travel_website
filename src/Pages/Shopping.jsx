@@ -9,6 +9,7 @@ import driedKiwi from '../../src/assets/shopping/driedKiwi.jpeg';
 import pista from '../../src/assets/shopping/pista.jpeg';
 import Shilajit from '../../src/assets/shopping/Shilajit.jpeg';
 import Cart from "../components/Cart";
+import { MdOutlineShoppingCart } from "react-icons/md";
 
 const foodItems = [
   {
@@ -269,12 +270,16 @@ const ShoppingPage = () => {
       <header className="bg-gradient-to-r from-blue-600 to-indigo-500 text-white p-6 text-center shadow-lg relative">
         <h1 className="text-4xl font-bold">Kashmiri Food Shop</h1>
         <p className="text-lg mt-2">Explore the authentic flavors of Kashmir</p>
-        <button
-          className="absolute top-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600"
-          onClick={() => setIsCartOpen(!isCartOpen)}
-        >
-          Cart ({cart.reduce((total, item) => total + item.quantity, 0)})
-        </button>
+     
+<button
+  className="absolute top-6 right-6 text-white p-4 rounded-full shadow-lg hover:bg-green-600 flex items-center justify-center"
+  onClick={() => setIsCartOpen(!isCartOpen)}
+>
+  <MdOutlineShoppingCart className="h-6 w-6 mr-2" /> {/* Icon with margin-right */}
+{cart.length>0&&  <span className="text-lg absolute top-0 right-2 font-bold">
+    {cart.reduce((total, item) => total + item.quantity, 0)}
+  </span> }
+</button>
       </header>
 
       {/* Main Content */}
