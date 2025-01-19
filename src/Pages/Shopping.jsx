@@ -8,6 +8,7 @@ import Walnut from '../../src/assets/shopping/walnut.jpeg';
 import driedKiwi from '../../src/assets/shopping/driedKiwi.jpeg';
 import pista from '../../src/assets/shopping/pista.jpeg';
 import Shilajit from '../../src/assets/shopping/Shilajit.jpeg';
+import Cart from "../components/Cart";
 
 const foodItems = [
   {
@@ -210,12 +211,15 @@ const categories = [
   },
 ];
 
+
+
 const ShoppingPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [sortOption, setSortOption] = useState("none");
-  const [hoveredItem, setHoveredItem] = useState(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [cart, setCart] = useState([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const filteredItems = foodItems
     .filter((item) => {
@@ -230,12 +234,47 @@ const ShoppingPage = () => {
       return 0;
     });
 
+  const addToCart = (item) => {
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((cartItem) => cartItem.id === item.id);
+      if (existingItem) {
+        return prevCart.map((cartItem) =>
+          cartItem.id === item.id
+            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+            : cartItem
+        );
+      } else {
+        return [...prevCart, { ...item, quantity: 1 }];
+      }
+    });
+  };
+
+  const removeFromCart = (id) => {
+    setCart((prevCart) =>
+      prevCart.filter((cartItem) => cartItem.id !== id)
+    );
+  };
+
+  const updateQuantity = (id, quantity) => {
+    setCart((prevCart) =>
+      prevCart.map((cartItem) =>
+        cartItem.id === id ? { ...cartItem, quantity } : cartItem
+      )
+    );
+  };
+
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-600 to-indigo-500 text-white p-6 text-center shadow-lg relative">
         <h1 className="text-4xl font-bold">Kashmiri Food Shop</h1>
         <p className="text-lg mt-2">Explore the authentic flavors of Kashmir</p>
+        <button
+          className="absolute top-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600"
+          onClick={() => setIsCartOpen(!isCartOpen)}
+        >
+          Cart ({cart.reduce((total, item) => total + item.quantity, 0)})
+        </button>
       </header>
 
       {/* Main Content */}
@@ -281,11 +320,7 @@ const ShoppingPage = () => {
         </div>
 
         {/* Main Section */}
-        <div
-          className={`w-full sm:w-3/4 p-6 max-h-screen overflow-y-auto ${
-            isSidebarOpen ? "sm:w-3/4" : "w-full"
-          }`}
-        >
+        <div className="w-full sm:w-3/4 p-6 max-h-screen overflow-y-auto">
           {/* Search and Sort */}
           <div className="flex flex-col sm:flex-row justify-between mb-6 items-center space-y-4 sm:space-y-0">
             <input
@@ -313,11 +348,9 @@ const ShoppingPage = () => {
                 <div
                   key={item.id}
                   className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 relative flex flex-col justify-between"
-                  onMouseEnter={() => setHoveredItem(item.id)}
-                  onMouseLeave={() => setHoveredItem(null)}
                 >
                   <img
-                    src={item.path|| item.imageUrl}
+                    src={item.path || item.imageUrl}
                     alt={item.name}
                     className="w-full h-48 object-cover"
                   />
@@ -331,15 +364,13 @@ const ShoppingPage = () => {
                     </p>
                   </div>
                   <div className="p-4">
-                    <button className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 w-full">
+                    <button
+                      className="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 w-full"
+                      onClick={() => addToCart(item)}
+                    >
                       Add to Cart
                     </button>
                   </div>
-                  {hoveredItem === item.id && (
-                    <div className="absolute top-0 left-0 w-full bg-black bg-opacity-75 text-white p-4 text-sm rounded-t-lg flex justify-center items-center">
-                      <p className="text-center">{item.description}</p>
-                    </div>
-                  )}
                 </div>
               ))
             ) : (
@@ -348,6 +379,17 @@ const ShoppingPage = () => {
           </div>
         </div>
       </div>
+
+      {/* Cart Component */}
+      <Cart
+        cart={cart}
+        isCartOpen={isCartOpen}
+        setIsCartOpen={setIsCartOpen}
+        removeFromCart={removeFromCart}
+        updateQuantity={updateQuantity} 
+        setCart={setCart}
+      />
+
       <Footer />
     </div>
   );
