@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
-import saffronImage from '../../src/assets/shopping/safroon.jpeg';
-import Almonds from '../../src/assets/shopping/Almonds.jpeg';
-import Anjoor from '../../src/assets/shopping/anjoor.jpeg';
-import Raisins from '../../src/assets/shopping/raisins.jpeg';
-import Walnut from '../../src/assets/shopping/walnut.jpeg';
-import driedKiwi from '../../src/assets/shopping/driedKiwi.jpeg';
-import pista from '../../src/assets/shopping/pista.jpeg';
-import Shilajit from '../../src/assets/shopping/Shilajit.jpeg';
+import saffronImage from "../../src/assets/shopping/safroon.jpeg";
+import Almonds from "../../src/assets/shopping/Almonds.jpeg";
+import Anjoor from "../../src/assets/shopping/anjoor.jpeg";
+import Raisins from "../../src/assets/shopping/raisins.jpeg";
+import Walnut from "../../src/assets/shopping/walnut.jpeg";
+import driedKiwi from "../../src/assets/shopping/driedKiwi.jpeg";
+import pista from "../../src/assets/shopping/pista.jpeg";
+import Shilajit from "../../src/assets/shopping/Shilajit.jpeg";
 import Cart from "../components/Cart";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
@@ -19,7 +19,7 @@ const foodItems = [
     price: 500,
     unit: "per gram",
     imageUrl: "https://via.placeholder.com/200?text=Saffron",
-    path:saffronImage,
+    path: saffronImage,
     description: "Premium Kashmiri saffron with a rich aroma and color.",
   },
   {
@@ -29,7 +29,7 @@ const foodItems = [
     price: 300,
     unit: "per kg",
     imageUrl: "https://via.placeholder.com/200?text=Walnuts",
-    path:Walnut,
+    path: Walnut,
     description: "Fresh and crunchy Kashmiri walnuts.",
   },
   {
@@ -38,7 +38,7 @@ const foodItems = [
     category: "Dry Fruits",
     price: 400,
     unit: "per kg",
-    path:Almonds,
+    path: Almonds,
     imageUrl: "https://via.placeholder.com/200?text=Almonds",
     description: "High-quality Kashmiri almonds.",
   },
@@ -48,7 +48,8 @@ const foodItems = [
     category: "Beverages",
     price: 200,
     unit: "per pack",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_TDNe0UJnTKJYMgeMe2oQIOMUrTKVSk4uA&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_TDNe0UJnTKJYMgeMe2oQIOMUrTKVSk4uA&s",
     description: "Traditional Kashmiri kehwa tea mix.",
   },
   {
@@ -57,7 +58,8 @@ const foodItems = [
     category: "Bakery",
     price: 150,
     unit: "per piece",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx6e7DqeyS8z8bZDOzP6QJfu0dhaPUaUinzQ&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx6e7DqeyS8z8bZDOzP6QJfu0dhaPUaUinzQ&s",
     description: "Soft and delicious Kashmiri shirmal bread.",
   },
   {
@@ -67,9 +69,9 @@ const foodItems = [
     price: 1000,
     unit: "per 10 grams",
     imageUrl: "https://via.placeholder.com/200?text=Shilajit", // Replace with actual image URL if available
-    description: "Pure and natural Kashmiri Shilajit, known for its health benefits.",
-    path:Shilajit
-
+    description:
+      "Pure and natural Kashmiri Shilajit, known for its health benefits.",
+    path: Shilajit,
   },
   {
     id: 6,
@@ -77,9 +79,9 @@ const foodItems = [
     category: "Bakery",
     price: 50,
     unit: "per piece",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAS9FyIG0G7IKlyljCAG4gI5hJ8jat8yMjsQ&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAS9FyIG0G7IKlyljCAG4gI5hJ8jat8yMjsQ&s",
     description: "Soft and fluffy tandoori roti, perfect with curries.",
-  
   },
   {
     id: 7,
@@ -87,7 +89,8 @@ const foodItems = [
     category: "Bakery",
     price: 100,
     unit: "per piece",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQLKm6rahJROq6nhsmWypypOjJbTPPVqsug&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkQLKm6rahJROq6nhsmWypypOjJbTPPVqsug&s",
     description:
       "A type of leavened bread, crispy and perfect for pairing with stews.",
   },
@@ -97,7 +100,8 @@ const foodItems = [
     category: "Desserts",
     price: 150,
     unit: "per serving",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRVjNL2wnesUI67BX9KFY3MPVXzRkF8v6jKg&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRVjNL2wnesUI67BX9KFY3MPVXzRkF8v6jKg&s",
     description: "A creamy rice pudding flavored with cardamom and saffron.",
   },
   // Additional Beverages
@@ -107,7 +111,8 @@ const foodItems = [
     category: "Beverages",
     price: 150,
     unit: "per cup",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReqpVi-3dU-bhSVjmWGU2GWijbeNBMQnchQw&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReqpVi-3dU-bhSVjmWGU2GWijbeNBMQnchQw&s",
     description: "A salty pink tea, traditionally served in Kashmir.",
   },
   {
@@ -116,10 +121,11 @@ const foodItems = [
     category: "Beverages",
     price: 120,
     unit: "per bottle",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfgNCvNgnTDGBEI7zNUFwVV4-kdIippGPjw&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfgNCvNgnTDGBEI7zNUFwVV4-kdIippGPjw&s",
     description: "A refreshing and aromatic rose-based drink.",
   },
- 
+
   // Additional Dry Fruits
   {
     id: 12,
@@ -127,7 +133,8 @@ const foodItems = [
     category: "Dry Fruits",
     price: 500,
     unit: "per kg",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMjfpHsbDJ89EDQXmSTAdMIRNQDX43UCzsrg&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMjfpHsbDJ89EDQXmSTAdMIRNQDX43UCzsrg&s",
     description: "Sweet and tart dried apricots from the valleys of Kashmir.",
   },
   {
@@ -137,7 +144,7 @@ const foodItems = [
     price: 350,
     unit: "per kg",
     imageUrl: "https://via.placeholder.com/200?text=Raisins",
-    path:Raisins,
+    path: Raisins,
     description: "Plump and juicy raisins grown in the Kashmir valley.",
   },
   {
@@ -146,7 +153,8 @@ const foodItems = [
     category: "Dry Fruits",
     price: 600,
     unit: "per kg",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTeFALaca0uR7pSu7DF4-q1DOA73QbEiaJQ&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTeFALaca0uR7pSu7DF4-q1DOA73QbEiaJQ&s",
     description: "Premium Kashmiri cashews, rich and buttery.",
   },
   // Additional Bakery Items
@@ -156,7 +164,8 @@ const foodItems = [
     category: "Bakery",
     price: 120,
     unit: "per piece",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZnzG5sNNLg1y5eKSU7HFwBzYcS17NdpYew&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWZnzG5sNNLg1y5eKSU7HFwBzYcS17NdpYew&s",
     description:
       "A soft, sweet bread, traditionally served with Kashmiri dishes.",
   },
@@ -166,7 +175,8 @@ const foodItems = [
     category: "Bakery",
     price: 100,
     unit: "per piece",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILLxngWfi269kxojVmQzebIOffIcc2qbG3Q&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSILLxngWfi269kxojVmQzebIOffIcc2qbG3Q&s",
     description: "A crispy, layered bread, often served with tea.",
   },
   {
@@ -175,10 +185,9 @@ const foodItems = [
     category: "Dry Fruits",
     price: 550,
     unit: "per kg",
-    imageUrl: "https://via.placeholder.com/200?text=Dried+Kiwi", 
+    imageUrl: "https://via.placeholder.com/200?text=Dried+Kiwi",
     description: "Sweet and tangy dried kiwi, a healthy and delicious snack.",
-    path:driedKiwi,
-
+    path: driedKiwi,
   },
   {
     id: 18,
@@ -186,33 +195,40 @@ const foodItems = [
     category: "Dry Fruits",
     price: 600,
     unit: "per kg",
-    imageUrl: "https://via.placeholder.com/200?text=Pista", 
+    imageUrl: "https://via.placeholder.com/200?text=Pista",
     description: "Premium quality pistachios, crunchy and rich in flavor.",
-    path:pista,
-
+    path: pista,
   },
-
 ];
 
 const categories = [
   { name: "All", imageUrl: "https://via.placeholder.com/50?text=All" },
   {
     name: "Dry Fruits",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzATw3m0CM6USV8PkHuACjioMo7jPM88oR0g&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzATw3m0CM6USV8PkHuACjioMo7jPM88oR0g&s",
   },
-  { name: "Spices", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbtE0K1aSU2wKTQ30aRByFwY9WHFeZZc91IQ&s" },
+  {
+    name: "Spices",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbtE0K1aSU2wKTQ30aRByFwY9WHFeZZc91IQ&s",
+  },
   {
     name: "Beverages",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDvLIG5GBe1PT2psfMHFvCGw6HhZd60J96EQ&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDvLIG5GBe1PT2psfMHFvCGw6HhZd60J96EQ&s",
   },
-  { name: "Bakery", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnNSG8hFcA-LpQHyMPiYBEmUc3PC21mbhwMg&s" },
+  {
+    name: "Bakery",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnNSG8hFcA-LpQHyMPiYBEmUc3PC21mbhwMg&s",
+  },
   {
     name: "Health Supplements",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSHIj0lPRMTipJCc17vDnWDD04K3wtISKRsA&s", 
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSHIj0lPRMTipJCc17vDnWDD04K3wtISKRsA&s",
   },
 ];
-
-
 
 const ShoppingPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -251,9 +267,7 @@ const ShoppingPage = () => {
   };
 
   const removeFromCart = (id) => {
-    setCart((prevCart) =>
-      prevCart.filter((cartItem) => cartItem.id !== id)
-    );
+    setCart((prevCart) => prevCart.filter((cartItem) => cartItem.id !== id));
   };
 
   const updateQuantity = (id, quantity) => {
@@ -270,16 +284,19 @@ const ShoppingPage = () => {
       <header className="bg-gradient-to-r from-blue-600 to-indigo-500 text-white p-6 text-center shadow-lg relative">
         <h1 className="text-4xl font-bold">Kashmiri Food Shop</h1>
         <p className="text-lg mt-2">Explore the authentic flavors of Kashmir</p>
-     
-<button
-  className="absolute top-6 right-6 text-white p-4 rounded-full shadow-lg hover:bg-green-600 flex items-center justify-center"
-  onClick={() => setIsCartOpen(!isCartOpen)}
->
-  <MdOutlineShoppingCart className="h-6 w-6 mr-2" /> {/* Icon with margin-right */}
-{cart.length>0&&  <span className="text-lg absolute top-0 right-2 font-bold">
-    {cart.reduce((total, item) => total + item.quantity, 0)}
-  </span> }
-</button>
+
+        <div
+          className="absolute top-[-0.5rem] right-[0] md:top-6 md:right-6 text-white p-4 rounded-full  hover:bg-green-600 flex items-center justify-center"
+          onClick={() => setIsCartOpen(!isCartOpen)}
+        >
+          <MdOutlineShoppingCart className="h-6 w-6 mr-2" />{" "}
+          {/* Icon with margin-right */}
+          {cart.length > 0 && (
+            <span className="text-lg absolute top-0 right-2 font-bold">
+              {cart.reduce((total, item) => total + item.quantity, 0)}
+            </span>
+          )}
+        </div>
       </header>
 
       {/* Main Content */}
@@ -391,7 +408,7 @@ const ShoppingPage = () => {
         isCartOpen={isCartOpen}
         setIsCartOpen={setIsCartOpen}
         removeFromCart={removeFromCart}
-        updateQuantity={updateQuantity} 
+        updateQuantity={updateQuantity}
         setCart={setCart}
       />
 

@@ -7,76 +7,104 @@ import BookingForm from "../components/HotelBookingForm";
 const hotels = [
   {
     id: 1,
-    name: "Hotel Ash vale",
-    imageUrl:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/8b/3a/cc/front-view-of-hotel.jpg?w=500&h=-1&s=1",
+    name: "Eden Resorts & Spa",
+    images: [
+      "https://edenresorts.in/wp-content/uploads/2023/12/36000013.webp",
+      "https://edenresorts.in/wp-content/uploads/2023/12/36000064.webp",
+      "https://edenresorts.in/wp-content/uploads/2023/12/36000011.webp",
+      "https://edenresorts.in/wp-content/uploads/2023/12/36000009.webp",
+      "https://edenresorts.in/wp-content/uploads/2023/12/36000001.webp",
+      "https://edenresorts.in/wp-content/uploads/2023/12/36000010.webp"
+    ],
+    price: "₹7,500/night",
+    features: ["Spa Services", "Lake View", "Free Parking"],
+    destination: "Pahalgam",
+  },
+  {
+    id: 2,
+    name: "Eden Resorts & Spa",
+    images: [
+      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-28-1-340x240.jpg",
+      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-4-340x240.jpg",
+      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-16-340x240.jpg",
+      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-to-resort-pahalgam-17-340x240.jpg",
+      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-7-340x240.jpg",
+      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-28-1-340x240.jpg"
+    ],
+    price: "₹7,500/night",
+    features: ["Spa Services", "Lake View", "Free Parking"],
+    destination: "Pahalgam",
+  },
+  {
+    id: 3,
+    name: "The Chinar Resort & Spa, Pahalgam",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXMFxzP9GBpatiE3wYcf5jRKfHBxH_daNwYw&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5rdTyb5FYfPWQ1-LSXzXmtYWuqQlYXfVGg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJu3QOY2dRYgv9VNapr2DlOZJy2qbizggUvQ&s",
+    ],
     price: "₹5,000/night",
     features: ["Free WiFi", "Mountain View", "Breakfast Included"],
     destination: "Gulmarg",
   },
+ 
+
   {
-    id: 2,
-    name: "Kashmir Valley Resort",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCWVNZEyln4HPSqdnYlA7Y9LZY4ziX4x1_A&s",
-    price: "₹7,500/night",
-    features: ["Spa Services", "Lake View", "Free Parking"],
-    destination: "Kashmir",
+    id: 4,
+    name: "Kashmir Heritage Hotel",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_dPLUI__a6JaSAc0O3FETjkSHcKxZXS3kXA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0OWSCC_Kq9xhif_Mfzo-nm9xd6TjLlZfThQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxIRdqhquXhBb6FW5eVeguwFxhQUJuIcLgTA&s",
+    ],
+    price: "₹5,500/night",
+    features: ["Free Parking", "Restaurant", "Mountain View"],
+    destination: "Srinagar",
   },
   {
-    id: 3,
+    id: 5,
+    name: "Kashmir Mahal Resorts",
+    images: [
+      "https://images.jdmagicbox.com/comp/srinagar/t1/9999px194.x194.151104143034.n1t1/catalogue/impex-hill-resorts-nishat-srinagar-hotels-90fgl.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtFcp9F6kUp150tDtTu9JHlkDwFxR2UoiBbQ&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Xa6tkh0vacGGUf8SfFEviQMOQKmiLjQiFQ&s",
+    ],
+    price: "₹6,800/night",
+    features: ["Free Parking", "Restaurant", "Mountain View"],
+    destination: "Srinagar",
+  },
+
+  {
+    id: 6,
     name: "Hotel Mirage",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxg-9NG3NB_cgWtzfoceol51OQwP5TuAJCw&s",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzp_0BPpA78L2VS_qF9OJo_qTNHjSTy1Nd1w&s",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f4/03/ff/main-view.jpg?w=1200&h=-1&s=1",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8KdFCT_hteYJKTsILMbeK204rfS1RMY5m7Q&s",
+    ],
     price: "₹4,000/night",
     features: ["Pet Friendly", "Garden View", "Restaurant"],
     destination: "Srinagar",
   },
-  {
-    id: 4,
-    name: "Snowy Peaks Inn",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF4vY131dhJKtAdr460sQ7FI3KXPBI0GHW4Q&s",
-    price: "₹6,000/night",
-    features: ["Ski Access", "Heated Rooms", "Bar"],
-    destination: "Pahalgam",
-  },
-  {
-    id: 5,
-    name: "Kashmir Heritage Hotel",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJuM60W9H2Up5Z4yKUvY3NkNiD1haD-3TNRA&s",
-    price: "₹5,500/night",
-    features: ["Free Parking", "Restaurant", "Mountain View"],
-    destination: "Kupwara",
-  },
-  {
-    id: 6,
-    name: "Betaab Valley Retreat",
-    imageUrl:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/1d/52/94/mirage-front-view.jpg?w=500&h=500&s=1",
-    price: "₹6,800/night",
-    features: ["Mountain View", "Free Breakfast", "Restaurant"],
-    destination: "Betaab Valley",
-  },
 ];
-
 const Hotels = () => {
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [numPersons, setNumPersons] = useState(1);
   const [destination, setDestination] = useState("");
   const [isFormOpen, setIsFormOpen] = useState(false);
-  const [selectedHotel, setSelectedHotel] = useState(null); 
+  const [selectedHotel, setSelectedHotel] = useState(null);
+  const [imageIndexes, setImageIndexes] = useState({}); // Store image index for each hotel
 
   const handleBookNowClick = (hotel) => {
-    setSelectedHotel(hotel)
+    setSelectedHotel(hotel);
     setIsFormOpen(true);
   };
 
   const handleCloseForm = () => {
     setIsFormOpen(false);
   };
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
@@ -109,6 +137,24 @@ const Hotels = () => {
   const uniqueDestinations = Array.from(
     new Set(hotels.map((hotel) => hotel.destination))
   );
+
+  // Function to change image index for a specific hotel
+  const changeImageIndex = (hotelId, direction) => {
+    setImageIndexes((prevIndexes) => {
+      const currentIndex = prevIndexes[hotelId] || 0;
+      const hotel = hotels.find((hotel) => hotel.id === hotelId);
+      const totalImages = hotel.images.length;
+
+      let newIndex = direction === 'next' ? currentIndex + 1 : currentIndex - 1;
+      if (newIndex >= totalImages) newIndex = 0;
+      if (newIndex < 0) newIndex = totalImages - 1;
+
+      return {
+        ...prevIndexes,
+        [hotelId]: newIndex,
+      };
+    });
+  };
 
   return (
     <div>
@@ -221,41 +267,63 @@ const Hotels = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredHotels.length > 0 ? (
-              filteredHotels.map((hotel) => (
-                <div
-                  key={hotel.id}
-                  className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
-                  data-aos="fade-up" // Apply AOS fade-up animation
-                >
-                  <img
-                    src={hotel.imageUrl}
-                    alt={hotel.name}
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-2xl font-semibold text-gray-800">
-                      {hotel.name}
-                    </h3>
-                    <p className="text-xl font-bold text-blue-600 mt-2">
-                      {hotel.price}
-                    </p>
-                    <ul className="mt-4 space-y-2 text-gray-600">
-                      {hotel.features.map((feature, index) => (
-                        <li key={index} className="flex items-center">
-                          <span className="text-green-500 mr-2">✔</span>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <button
-                      onClick={()=>handleBookNowClick(hotel)}
-                      className="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200"
-                    >
-                      Book Now
-                    </button>
+              filteredHotels.map((hotel) => {
+                const currentImageIndex = imageIndexes[hotel.id] || 0;
+
+                return (
+                  <div
+                    key={hotel.id}
+                    className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+                    data-aos="fade-up" // Apply AOS fade-up animation
+                  >
+                    <div className="relative">
+                      <img
+                        src={hotel.images[currentImageIndex]}
+                        alt={hotel.name}
+                        className="w-full h-64 object-cover"
+                      />
+
+                      {/* Custom Prev and Next Buttons in Flex */}
+                      <div className="absolute top-1/2 left-0 transform -translate-y-1/2 w-full flex justify-between px-4">
+                        <button
+                          onClick={() => changeImageIndex(hotel.id, 'prev')}
+                          className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900"
+                        >
+                          &#8592;
+                        </button>
+                        <button
+                          onClick={() => changeImageIndex(hotel.id, 'next')}
+                          className="bg-gray-800 text-white p-2 rounded-full hover:bg-gray-900"
+                        >
+                          &#8594;
+                        </button>
+                      </div>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-2xl font-semibold text-gray-800">
+                        {hotel.name}
+                      </h3>
+                      <p className="text-xl font-bold text-blue-600 mt-2">
+                        {hotel.price}
+                      </p>
+                      <ul className="mt-4 space-y-2 text-gray-600">
+                        {hotel.features.map((feature, index) => (
+                          <li key={index} className="flex items-center">
+                            <span className="text-green-500 mr-2">✔</span>
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                      <button
+                        onClick={() => handleBookNowClick(hotel)}
+                        className="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200"
+                      >
+                        Book Now
+                      </button>
+                    </div>
                   </div>
-                </div>
-              ))
+                );
+              })
             ) : (
               <p className="text-center text-gray-600">
                 No hotels found for this destination.
@@ -268,7 +336,6 @@ const Hotels = () => {
         isOpen={isFormOpen}
         onClose={handleCloseForm}
         selectedHotel={selectedHotel}
-     
       />
       <Footer />
     </div>
