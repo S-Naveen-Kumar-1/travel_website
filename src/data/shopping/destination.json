@@ -1,0 +1,164 @@
+[
+    {
+      "place": "Srinagar",
+      "spotGroups": [
+        {
+          "groupName": "Nature Trails",
+          "price": "₹2000-₹3000 (includes travel and food)",
+          "mealIncluded": "No",
+          "spots": [
+            {
+              "name": "Betaab Valley",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqFrWrb9x45vs3CI9jrBdBnlMwXU-jIWXTjQ&s",
+              "description": "A scenic valley surrounded by snow-capped mountains, lush greenery, and crystal-clear rivers. Ideal for nature walks and photography."
+            },
+            {
+              "name": "Naranag",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKM4O7k0Aedhad2jQsS5kWGS2w0d2M-7VYsg&s",
+              "description": "A tranquil village located in the foothills of the Himalayas, known for its serene environment and beautiful trekking trails."
+            }
+          ]
+        },
+        {
+          "groupName": "Cultural Tour",
+          "price": "₹1000-₹1500 (includes travel and food)",
+          "mealIncluded": "Yes",
+          "spots": [
+            {
+              "name": "Shankaracharya Temple",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw0p4bsA0sKsqirWqCiqtJSupQ880XjMjFfA&s",
+              "description": "An ancient Hindu temple perched atop a hill, offering panoramic views of Srinagar and Dal Lake."
+            },
+            {
+              "name": "Mughal Gardens",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq2Dm21d3-zSldowyruFkBkpUtrhy1nL2-yw&s",
+              "description": "Explore the stunning Mughal-era gardens such as Nishat Bagh, Shalimar Bagh, and Chashme Shahi, showcasing the grandeur of the Mughal dynasty."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place": "Pahalgam",
+      "spotGroups": [
+        {
+          "groupName": "Adventure and Trekking",
+          "price": "₹2500-₹4000 (includes travel and food)",
+          "mealIncluded": "Yes",
+          "spots": [
+            {
+              "name": "Aru Valley Trek",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUXuRvBJOFhsYyQM85X7mByIr0O3PYgs9k9g&s",
+              "description": "A scenic trek offering views of snow-capped mountains, rivers, and alpine meadows, perfect for adventure seekers."
+            },
+            {
+              "name": "Baisaran Valley",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPTcvxKN5b8XSd338Iycnk1pJcQo0fM3OGcA&s",
+              "description": "Known as 'Mini Switzerland,' Baisaran Valley offers stunning views of Pahalgam and the surrounding peaks."
+            }
+          ]
+        },
+        {
+          "groupName": "Nature and Wildlife",
+          "price": "₹1500-₹2500 (includes travel and food)",
+          "mealIncluded": "No",
+          "spots": [
+            {
+              "name": "Pahalgam Wildlife Sanctuary",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROXZ2jmvkOLRD__VapunSmShCtzlQXGEMEOg&s",
+              "description": "A sanctuary home to a wide variety of wildlife, including deer, leopards, and several species of birds."
+            },
+            {
+              "name": "Lidder River",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmw7t-xehC40EYncVOfeTk9s_BYgRnHHihA&s",
+              "description": "A serene river flowing through Pahalgam, perfect for fishing, rafting, and nature walks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place": "Gulmarg",
+      "spotGroups": [
+        {
+          "groupName": "Adventure Activities",
+          "price": "₹3000-₹5000 (includes travel and food)",
+          "mealIncluded": "Yes",
+          "spots": [
+            {
+              "name": "Gondola Ride",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzVR2ifNJa6BfXCHBL_CkuVC2X9yWS2zUS3w&s",
+              "description": "Take a thrilling ride on the Gulmarg Gondola, one of the highest cable cars in the world, offering spectacular views of the snow-covered mountains."
+            },
+            {
+              "name": "Snowboarding at Gulmarg",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlYF2Bwwcw9b2bfLP7ctPkZ9PFtHFGc5SKMw&s",
+              "description": "Gulmarg is a popular destination for snowboarding and other winter sports, offering excellent slopes for all levels of adventurers."
+            },
+            {
+              "name": "Skiing at Gulmarg",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROTdlB6yZcu4A0slA8rUYz40grVRIa1U5V2Q&s",
+              "description": "Enjoy skiing in the snow-capped mountains of Gulmarg, a premier destination for winter sports enthusiasts, with slopes suitable for all skill levels."
+            }
+          ]
+        },
+        {
+          "groupName": "Scenic Spots",
+          "price": "₹1000-₹1500 (includes travel and food)",
+          "mealIncluded": "No",
+          "spots": [
+            {
+              "name": "Alpather Lake",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdOkxC4pxOHazZNZyWd47Vb2R5WwAsW28fLw&s",
+              "description": "A pristine high-altitude lake surrounded by snow-capped mountains, perfect for photography and nature walks."
+            },
+            {
+              "name": "Outer Circle Walk",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc1F_inAOVzF5hjYdEoo35YYXFbHDFgeWPlA&s",
+              "description": "A beautiful walk around the outskirts of Gulmarg, offering panoramic views of the valley and the surrounding mountains."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "place": "Sonamarg",
+      "spotGroups": [
+        {
+          "groupName": "Trekking and Adventure",
+          "price": "₹2000-₹3500 (includes travel and food)",
+          "mealIncluded": "Yes",
+          "spots": [
+            {
+              "name": "Thajiwas Glacier",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiyjhutpvr1LY7gvejqzjcuM4rI5AuZIbohw&s",
+              "description": "A stunning glacier trek that takes you through alpine meadows and snow-capped peaks, offering breathtaking views."
+            },
+            {
+              "name": "Sonamarg Meadows",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqXJ_1RPAMtXRZ7Hfds2ut3CuZxJJc8W2RhQ&s",
+              "description": "A scenic trek through lush meadows with views of snow-covered peaks, ideal for nature lovers and photographers."
+            }
+          ]
+        },
+        {
+          "groupName": "Nature and Scenic Views",
+          "price": "₹1500-₹2000 (includes travel and food)",
+          "mealIncluded": "No",
+          "spots": [
+            {
+              "name": "Sonamarg Valley",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ70EXuAVo3GYfnegpQ5DrsD35SHFVOMQh77A&s",
+              "description": "Known for its stunning scenic beauty, Sonamarg is surrounded by glaciers, rivers, and towering snow-capped mountains."
+            },
+            {
+              "name": "Vishansar Lake",
+              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-urRVDYaMFbS7uED_1UmQ5sIQ6T1M4kK8Q&s",
+              "description": "A serene alpine lake located at the base of towering peaks, perfect for nature walks and photography."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  

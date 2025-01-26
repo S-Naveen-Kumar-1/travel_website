@@ -1,4 +1,5 @@
 import React from "react";
+import banner from "../../src/assets/banner.webp";
 
 const Hero = () => {
   return (
@@ -6,19 +7,18 @@ const Hero = () => {
       id="hero"
       className="relative h-[80vh] lg:h-[600px] overflow-hidden bg-cover bg-center"
       style={{
-        backgroundImage:
-          "url('https://www.shutterstock.com/image-photo/serene-landscape-sindh-river-valley-600nw-2415275507.jpg')",
+        backgroundImage: `url(${banner})`,
       }}
     >
       <section className="lg:h-full flex flex-col justify-center items-center text-center p-8 z-10">
         <div className="max-w-4xl w-full mb-12 text-center sm:mb-20 xs:mb-24">
-          <h1 className="text-4xl font-bold mb-4 sm:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 animate-blink">
+          <h1 className="text-4xl font-bold mb-4 sm:text-3xl text-[biege]">
             Explore the Beauty of Kashmir
           </h1>
-          <p className="text-xl mb-8 sm:text-lg sm:mb-12 xs:text-base xs:mb-16 text-gray-800 animate-blink">
+          {/* <p className="text-xl mb-8 sm:text-lg sm:mb-12 xs:text-base xs:mb-16 text-gray-800 ">
             Discover breathtaking landscapes, serene lakes, and pristine
             meadows.
-          </p>
+          </p> */}
         </div>
 
         {/* Search Input Box at the bottom */}
