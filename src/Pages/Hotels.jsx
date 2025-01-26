@@ -22,7 +22,7 @@ const hotels = [
   },
   {
     id: 2,
-    name: "Eden Resorts & Spa",
+    name: "Green Top Resort",
     images: [
       "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-28-1-340x240.jpg",
       "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-4-340x240.jpg",
@@ -31,7 +31,7 @@ const hotels = [
       "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-7-340x240.jpg",
       "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-28-1-340x240.jpg"
     ],
-    price: "₹7,500/night",
+    price: "₹6,500/night",
     features: ["Spa Services", "Lake View", "Free Parking"],
     destination: "Pahalgam",
   },
