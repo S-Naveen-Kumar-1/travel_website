@@ -3,91 +3,13 @@ import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS CSS styles
 import Footer from "../components/Footer";
 import BookingForm from "../components/HotelBookingForm";
+import axios from "axios";
+import { Base_Url } from "../config";
 
-const hotels = [
-  {
-    id: 1,
-    name: "Eden Resorts & Spa",
-    images: [
-      "https://edenresorts.in/wp-content/uploads/2023/12/36000013.webp",
-      "https://edenresorts.in/wp-content/uploads/2023/12/36000064.webp",
-      "https://edenresorts.in/wp-content/uploads/2023/12/36000011.webp",
-      "https://edenresorts.in/wp-content/uploads/2023/12/36000009.webp",
-      "https://edenresorts.in/wp-content/uploads/2023/12/36000001.webp",
-      "https://edenresorts.in/wp-content/uploads/2023/12/36000010.webp"
-    ],
-    price: "₹7,500/night",
-    features: ["Spa Services", "Lake View", "Free Parking"],
-    destination: "Pahalgam",
-  },
-  {
-    id: 2,
-    name: "Green Top Resort",
-    images: [
-      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-28-1-340x240.jpg",
-      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-4-340x240.jpg",
-      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-16-340x240.jpg",
-      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-to-resort-pahalgam-17-340x240.jpg",
-      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-7-340x240.jpg",
-      "http://greentopresortpahalgam.com/wp-content/uploads/2022/05/green-top-resort-28-1-340x240.jpg"
-    ],
-    price: "₹6,500/night",
-    features: ["Spa Services", "Lake View", "Free Parking"],
-    destination: "Pahalgam",
-  },
-  {
-    id: 3,
-    name: "The Chinar Resort & Spa, Pahalgam",
-    images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXMFxzP9GBpatiE3wYcf5jRKfHBxH_daNwYw&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5rdTyb5FYfPWQ1-LSXzXmtYWuqQlYXfVGg&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJu3QOY2dRYgv9VNapr2DlOZJy2qbizggUvQ&s",
-    ],
-    price: "₹5,000/night",
-    features: ["Free WiFi", "Mountain View", "Breakfast Included"],
-    destination: "Gulmarg",
-  },
- 
 
-  {
-    id: 4,
-    name: "Kashmir Heritage Hotel",
-    images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_dPLUI__a6JaSAc0O3FETjkSHcKxZXS3kXA&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0OWSCC_Kq9xhif_Mfzo-nm9xd6TjLlZfThQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxIRdqhquXhBb6FW5eVeguwFxhQUJuIcLgTA&s",
-    ],
-    price: "₹5,500/night",
-    features: ["Free Parking", "Restaurant", "Mountain View"],
-    destination: "Srinagar",
-  },
-  {
-    id: 5,
-    name: "Kashmir Mahal Resorts",
-    images: [
-      "https://images.jdmagicbox.com/comp/srinagar/t1/9999px194.x194.151104143034.n1t1/catalogue/impex-hill-resorts-nishat-srinagar-hotels-90fgl.jpg",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtFcp9F6kUp150tDtTu9JHlkDwFxR2UoiBbQ&s",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Xa6tkh0vacGGUf8SfFEviQMOQKmiLjQiFQ&s",
-    ],
-    price: "₹6,800/night",
-    features: ["Free Parking", "Restaurant", "Mountain View"],
-    destination: "Srinagar",
-  },
-
-  {
-    id: 6,
-    name: "Hotel Mirage",
-    images: [
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzp_0BPpA78L2VS_qF9OJo_qTNHjSTy1Nd1w&s",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f4/03/ff/main-view.jpg?w=1200&h=-1&s=1",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8KdFCT_hteYJKTsILMbeK204rfS1RMY5m7Q&s",
-    ],
-    price: "₹4,000/night",
-    features: ["Pet Friendly", "Garden View", "Restaurant"],
-    destination: "Srinagar",
-  },
-];
 const Hotels = () => {
+  const [hotels, setHotels] = useState([]);
+
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
   const [numPersons, setNumPersons] = useState(1);
@@ -155,7 +77,18 @@ const Hotels = () => {
       };
     });
   };
-
+  const fetchHotels = async () => {
+    try {
+      const response = await axios.get(`${Base_Url}/hotels`);
+      console.log(response.data, "Fetched Hotels");
+      setHotels(response.data.data); 
+    } catch (error) {
+      console.error("Error fetching hotels:", error);
+    }
+  };
+  useEffect(() => {
+    fetchHotels();
+  }, []);
   return (
     <div>
       {/* Banner Section with Form on Top */}

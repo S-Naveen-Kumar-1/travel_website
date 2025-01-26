@@ -8,6 +8,7 @@ import Packages from './Packages'
 import FoodItems from './Shopping'
 import BlogListing from './BlogsListing'
 import BlogView from '../components/BlogView'
+import Admin from './Admin'
 
 export const AllRoutes = () => {
   return (
@@ -20,6 +21,7 @@ export const AllRoutes = () => {
         <Route path='/shopping' element={<FoodItems/>}></Route>
         <Route path='/blogs' element={<BlogListing/>}></Route>
         <Route path="/blogs/:id" element={<BlogView />} />
+        <Route path="/admin-hamsafran" element={<Admin />} />
 
     </Routes>
   )
