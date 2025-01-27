@@ -237,7 +237,7 @@ const Hotels = () => {
                         {hotel.name}
                       </h3>
                       <p className="text-xl font-bold text-blue-600 mt-2">
-                        {hotel.price}
+                        {hotel.price} Onwards
                       </p>
                       <ul className="mt-4 space-y-2 text-gray-600">
                         {hotel.features.map((feature, index) => (
