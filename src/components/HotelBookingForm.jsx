@@ -4,14 +4,12 @@ const BookingForm = ({ isOpen, onClose, selectedHotel }) => {
   // State for form fields
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [whatsapp, setWhatsapp] = useState('');
   const [whatsappUpdates, setWhatsappUpdates] = useState(false);
-  
+
   // State for validation errors
   const [formErrors, setFormErrors] = useState({
     email: '',
     phone: '',
-    whatsapp: '',
   });
 
   // Validation function
@@ -19,7 +17,6 @@ const BookingForm = ({ isOpen, onClose, selectedHotel }) => {
     const errors = {
       email: '',
       phone: '',
-      whatsapp: '',
     };
 
     // Email validation
@@ -36,13 +33,6 @@ const BookingForm = ({ isOpen, onClose, selectedHotel }) => {
       errors.phone = 'Please enter a valid 10-digit phone number';
     }
 
-    // WhatsApp validation
-    if (!whatsapp) {
-      errors.whatsapp = 'WhatsApp number is required';
-    } else if (!/^\d{10}$/.test(whatsapp)) {
-      errors.whatsapp = 'Please enter a valid 10-digit WhatsApp number';
-    }
-
     setFormErrors(errors);
     return Object.values(errors).every((error) => error === '');
   };
@@ -53,9 +43,9 @@ const BookingForm = ({ isOpen, onClose, selectedHotel }) => {
 
     if (validateForm()) {
       // Handle successful form submission
-      alert('Booking Successful!');  // This will show a simple alert message
+      alert('Booking Successful!');
       console.log('Form submitted successfully!');
-      
+
       // Optionally, close the form
       onClose();
     }
@@ -119,19 +109,6 @@ const BookingForm = ({ isOpen, onClose, selectedHotel }) => {
               className="w-full p-3 border border-gray-300 rounded-lg mt-2"
             />
             {formErrors.phone && <p className="text-red-500 text-sm">{formErrors.phone}</p>}
-          </div>
-
-          {/* WhatsApp Field */}
-          <div className="mb-4">
-            <label htmlFor="whatsapp" className="block text-lg text-gray-600">WhatsApp Number</label>
-            <input
-              type="text"
-              id="whatsapp"
-              value={whatsapp}
-              onChange={(e) => setWhatsapp(e.target.value)}
-              className="w-full p-3 border border-gray-300 rounded-lg mt-2"
-            />
-            {formErrors.whatsapp && <p className="text-red-500 text-sm">{formErrors.whatsapp}</p>}
           </div>
 
           {/* WhatsApp Updates Checkbox */}

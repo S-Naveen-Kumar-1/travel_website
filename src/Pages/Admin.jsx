@@ -1,32 +1,42 @@
 import React, { useState } from "react";
 import Hotel from "../components/admin/Hotel";
+import AdminShoppingPanel from "../components/admin/ShoppingItems";
+import Login from "../components/admin/Login";
 
 const Admin = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [selectedSection, setSelectedSection] = useState("Hotels");
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+  // Handle successful login
+  const handleLogin = () => {
+    setIsAuthenticated(true);
+  };
 
   const renderContent = () => {
     switch (selectedSection) {
       case "Hotels":
-        return (
-          <div>
-            <Hotel />
-          </div>
-        );
+        return <Hotel />;
       case "Destinations":
         return <div>Manage Destinations</div>;
       case "Packages":
         return <div>Manage Packages</div>;
+      case "Shopping":
+        return <AdminShoppingPanel />;
       default:
         return <div>Welcome to the Admin Panel</div>;
     }
   };
 
+  if (!isAuthenticated) {
+    return <Login onLogin={handleLogin} />;
+  }
+
   return (
     <div className="flex h-screen">
-      {/* Sidebar for larger screens */}
+    
       <div
-        className={`w-1/4 md:w-1/6 bg-gray-800 text-white flex flex-col transition-all duration-300 ease-in-out ${
+        className={`w-1/4 md:w-1/6 bg-gray-800 text-white flex flex-col transition-all duration-300 ${
           isSidebarOpen ? "hidden lg:block" : "hidden lg:block"
         }`}
       >
@@ -58,11 +68,11 @@ const Admin = () => {
           </li>
           <li
             className={`p-4 cursor-pointer hover:bg-gray-700 ${
-              selectedSection === "Packages" ? "bg-gray-700" : ""
+              selectedSection === "Shopping" ? "bg-gray-700" : ""
             }`}
-            onClick={() => setSelectedSection("Packages")}
+            onClick={() => setSelectedSection("Shopping")}
           >
-            Packages
+            Shopping List
           </li>
         </ul>
         <div className="p-4 border-t border-gray-700 text-sm">
@@ -72,10 +82,10 @@ const Admin = () => {
 
       {/* Main Content */}
       <div className="flex-grow bg-gray-100 overflow-auto">
-        {/* Mobile/Tablet Navigation */}
+        {/* Mobile Navigation */}
         <div className="lg:hidden flex flex-wrap justify-between bg-gray-800 text-white">
           <button
-            className={` sm:w-auto px-4 py-2 ${
+            className={`sm:w-auto px-4 py-2 ${
               selectedSection === "Hotels" ? "bg-gray-700" : "hover:bg-gray-700"
             }`}
             onClick={() => setSelectedSection("Hotels")}
@@ -93,7 +103,7 @@ const Admin = () => {
             Destinations
           </button>
           <button
-            className={` sm:w-auto px-4 py-2 ${
+            className={`sm:w-auto px-4 py-2 ${
               selectedSection === "Packages"
                 ? "bg-gray-700"
                 : "hover:bg-gray-700"

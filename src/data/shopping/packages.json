@@ -1,0 +1,186 @@
+[
+    {
+      "id": 1,
+      "title": "Kashmir Deluxe Tour",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3BnXSLgtZ9NJx36APNvEsLnk97xllE_SBfQ&s",
+      "price": "₹25,000",
+      "features": ["3-Star Stay", "Breakfast Included", "Srinagar, Gulmarg, Pahalgam Tour"],
+      "description": "Experience the beauty of Srinagar, Gulmarg, and Pahalgam with a luxurious stay.",
+      "destination": "Kashmir",
+      "days": 7,
+      "people": 2,
+      "viewDetails": {
+        "images": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3BnXSLgtZ9NJx36APNvEsLnk97xllE_SBfQ&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmy6VOpYGBzaxGti8ikgX1qBbxti0_lIVIE2IskWxwXJEbNne5Rx10tsnmT7dV-kF9AWlZ_A&usqp=CAU",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYtvbuB9NQusg--i6fz9rz5DCb8f87NoBv7nmjswF7qvnMQg2Yr1YXy-i7PQ&s"
+        ],
+        "detailedDescription": "A lavish tour package to experience Kashmir's natural beauty, from the serene Dal Lake to the snow-capped mountains of Gulmarg. Visit top attractions like Mughal Gardens, explore the historical temples of Srinagar, and enjoy the scenic landscapes of Pahalgam and Gulmarg.",
+        "itinerary": [
+          "Day 1: Arrival in Srinagar, check-in to the hotel.",
+          "Day 2: Explore Dal Lake, Mughal Gardens, and Shankaracharya Temple.",
+          "Day 3: Full-day excursion to Gulmarg, enjoy scenic views and explore.",
+          "Day 4: Explore Pahalgam and Betaab Valley.",
+          "Day 5: Visit the famous temples and shrines of Srinagar.",
+          "Day 6: Shopping in Srinagar market and local sightseeing.",
+          "Day 7: Departure from Srinagar."
+        ],
+        "inclusions": [
+          "Stay at 3-star hotels",
+          "Daily breakfast",
+          "Guided city tours",
+          "Transportation (across the trip)"
+        ],
+        "exclusions": [
+          "Flight tickets",
+          "Lunch and dinner",
+          "Personal expenses"
+        ],
+        "hotelDetails": {
+          "name": "Srinagar View Hotel",
+          "rating": 3,
+          "amenities": [
+            "Free Wi-Fi",
+            "Air Conditioning",
+            "Room Service",
+            "TV",
+            "Laundry Service"
+          ]
+        },
+        "customerReviews": [
+          {
+            "reviewer": "John Doe",
+            "rating": 5,
+            "comment": "An amazing experience! The tour was well-planned and the views were breathtaking."
+          },
+          {
+            "reviewer": "Alice Smith",
+            "rating": 4,
+            "comment": "Great experience, but I wish the transportation was a bit more comfortable."
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Srinagar & Gulmarg Adventure",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHhgPJcNZrb2N84WWcrszmeWtw39hHdhUAHw&s",
+      "price": "₹18,000",
+      "features": ["Skiing in Gulmarg", "Houseboat Stay", "Free WiFi"],
+      "description": "A thrilling adventure tour to explore the skiing slopes of Gulmarg and the houseboats of Srinagar.",
+      "destination": "Kashmir",
+      "days": 5,
+      "people": 4,
+      "viewDetails": {
+        "images": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHhgPJcNZrb2N84WWcrszmeWtw39hHdhUAHw&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP64O5qRmIC9dmxBrpzcJKNV6w66mVXoLFz7KnK-l_W2ckW9v3-MpC0usprntc5O0gFfgKbw&usqp=CAU",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ9-4rqOG9q1L6z6dk_VdyIGvgECG7azYh2A&usqp=CAU"
+        ],
+        "detailedDescription": "This exciting package offers you a thrilling skiing adventure in Gulmarg along with the unique experience of staying on a houseboat in Srinagar. Explore the charm of Srinagar's Dal Lake and enjoy the thrill of skiing in the beautiful snowy landscapes of Gulmarg.",
+        "itinerary": [
+          "Day 1: Arrival in Srinagar, check-in to houseboat.",
+          "Day 2: Explore Dal Lake and take a shikara ride.",
+          "Day 3: Head to Gulmarg for skiing and snow activities.",
+          "Day 4: Skiing, snowboarding, and snowshoe hiking in Gulmarg.",
+          "Day 5: Departure."
+        ],
+        "inclusions": [
+          "Houseboat stay in Srinagar",
+          "Skiing in Gulmarg",
+          "Shikara ride",
+          "Transportation (across the trip)"
+        ],
+        "exclusions": [
+          "Meals other than breakfast",
+          "Personal expenses"
+        ],
+        "hotelDetails": {
+          "name": "Gulmarg Adventure Resort",
+          "rating": 4,
+          "amenities": [
+            "Free Wi-Fi",
+            "Ski Equipment Rentals",
+            "Spa",
+            "Room Service",
+            "Heated Pool"
+          ]
+        },
+        "customerReviews": [
+          {
+            "reviewer": "Jane Doe",
+            "rating": 5,
+            "comment": "The houseboat experience was unique, and skiing in Gulmarg was unforgettable."
+          },
+          {
+            "reviewer": "Mike Johnson",
+            "rating": 4,
+            "comment": "Had a blast on the trip! A little pricey but worth the experience."
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "title": "Kashmir Winter Wonderland",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl1beDlUedmN0BhBZvKkxhm2CLv-VBywxGjg&s",
+      "price": "₹30,000",
+      "features": ["Snow Activities", "Luxury Stay", "Gulmarg Skiing"],
+      "description": "Enjoy the winter beauty of Kashmir with skiing and snow activities in Gulmarg.",
+      "destination": "Kashmir",
+      "days": 7,
+      "people": 2,
+      "viewDetails": {
+        "images": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl1beDlUedmN0BhBZvKkxhm2CLv-VBywxGjg&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Z2TSdPFSXZf-Pn1qLFTk2ofzODg_d1bsF0VSj01Y75vxTq4fiWA52Dpf8rysh4ufnQYVoA&usqp=CAU",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhzFNojK7gnwoBsmv_mQ2hgAz-Y1K8v7z0jlYF0tRiP6VtPqInA0Lh-I8gdjI_morT-B_fxhQ&s"
+        ],
+        "detailedDescription": "Immerse yourself in the serene winter landscapes of Kashmir, featuring world-class skiing in Gulmarg. This tour combines snow activities and a luxury stay at top resorts, giving you an unparalleled winter adventure experience.",
+        "itinerary": [
+          "Day 1: Arrival in Srinagar, transfer to Gulmarg.",
+          "Day 2: Skiing and snow activities in Gulmarg.",
+          "Day 3: Snowboarding and snowshoe hiking.",
+          "Day 4: Explore the local snow resorts.",
+          "Day 5: Visit the historical sites and museums in Gulmarg.",
+          "Day 6: Leisure day in Gulmarg, enjoy spa and local food.",
+          "Day 7: Departure."
+        ],
+        "inclusions": [
+          "Luxury hotel stay",
+          "Gulmarg skiing passes",
+          "Winter snow activities",
+          "Transportation across the trip"
+        ],
+        "exclusions": [
+          "Meals other than breakfast",
+          "Ski gear rentals",
+          "Personal expenses"
+        ],
+        "hotelDetails": {
+          "name": "Luxury Snow Resort",
+          "rating": 5,
+          "amenities": [
+            "Indoor Heated Pool",
+            "Luxury Spa",
+            "Free Wi-Fi",
+            "Ski Equipment Rentals",
+            "Room Service"
+          ]
+        },
+        "customerReviews": [
+          {
+            "reviewer": "Tom Hanks",
+            "rating": 5,
+            "comment": "Best skiing experience of my life. The resort was fabulous!"
+          },
+          {
+            "reviewer": "Emma Stone",
+            "rating": 4,
+            "comment": "Amazing snow activities, though the hotel service could have been a bit faster."
+          }
+        ]
+      }
+    }
+  ]
+  

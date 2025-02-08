@@ -9,6 +9,8 @@ import FoodItems from './Shopping'
 import BlogListing from './BlogsListing'
 import BlogView from '../components/BlogView'
 import Admin from './Admin'
+import PackageDetails from './PackageDetails'
+import AboutUs from './AboutUs'
 
 export const AllRoutes = () => {
   return (
@@ -22,7 +24,11 @@ export const AllRoutes = () => {
         <Route path='/blogs' element={<BlogListing/>}></Route>
         <Route path="/blogs/:id" element={<BlogView />} />
         <Route path="/admin-hamsafran" element={<Admin />} />
+        <Route path="/package-details/:id" element={<PackageDetails />} />
+        <Route path="/about-us" element={<AboutUs />} />
 
+        
+        
     </Routes>
   )
 }
