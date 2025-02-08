@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Login = ({ onLogin }) => {
-  const [credentials, setCredentials] = useState({ username: "admin_hamsafran", password: "adminHamsafran@123" });
+  const [credentials, setCredentials] = useState({ username: "", password: "" });
   const [error, setError] = useState("");
 
   const handleChange = (e) => {
