@@ -7,7 +7,8 @@ const Destinations = () => {
   const [selectedPlace, setSelectedPlace] = useState("");
   const [selectedGroup, setSelectedGroup] = useState(null);
   const [filters, setFilters] = useState({ place: "", group: "" });
-  const [filteredDestinations, setFilteredDestinations] = useState(destinationsData);
+  const [filteredDestinations, setFilteredDestinations] =
+    useState(destinationsData);
   const [showForm, setShowForm] = useState(false); // State to toggle the form visibility
 
   const handleSearch = () => {
@@ -58,7 +59,9 @@ const Destinations = () => {
             <div className="w-full sm:w-[200px]">
               <select
                 value={filters.place}
-                onChange={(e) => setFilters((prev) => ({ ...prev, place: e.target.value }))}
+                onChange={(e) =>
+                  setFilters((prev) => ({ ...prev, place: e.target.value }))
+                }
                 className="p-3 text-base border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="" disabled selected>
@@ -76,7 +79,9 @@ const Destinations = () => {
             <div className="w-full sm:w-[200px]">
               <select
                 value={filters.group}
-                onChange={(e) => setFilters((prev) => ({ ...prev, group: e.target.value }))}
+                onChange={(e) =>
+                  setFilters((prev) => ({ ...prev, group: e.target.value }))
+                }
                 className="p-3 text-base border border-gray-300 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 <option value="" disabled selected>
@@ -114,7 +119,9 @@ const Destinations = () => {
         ) : (
           filteredDestinations.map((destination) => (
             <div key={destination.place} className="mb-12">
-              {destination.spotGroups.length > 0 && <h2 className="text-3xl font-bold mb-6">{destination.place}</h2>}
+              {destination.spotGroups.length > 0 && (
+                <h2 className="text-3xl font-bold mb-6">{destination.place}</h2>
+              )}
               <div>
                 {destination.spotGroups.length === 0 ? (
                   <p className="text-lg text-center text-gray-600"></p>
@@ -123,7 +130,9 @@ const Destinations = () => {
                     <div key={group.groupName} className="mb-8">
                       {/* Group Name and Price */}
                       <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
-                        <h3 className="text-2xl font-semibold">{group.groupName}</h3>
+                        <h3 className="text-2xl font-semibold">
+                          {group.groupName}
+                        </h3>
                         <p className="text-lg text-gray-600">{group.price}</p>
                         <button
                           onClick={() => handleGroupBooking(group)}
@@ -146,8 +155,12 @@ const Destinations = () => {
                               className="w-full h-48 object-cover"
                             />
                             <div className="p-4">
-                              <h3 className="text-xl font-semibold mb-2">{spot.name}</h3>
-                              <p className="text-gray-600 mb-4">{spot.description}</p>
+                              <h3 className="text-xl font-semibold mb-2">
+                                {spot.name}
+                              </h3>
+                              <p className="text-gray-600 mb-4">
+                                {spot.description}
+                              </p>
                             </div>
                           </div>
                         ))}
@@ -160,7 +173,13 @@ const Destinations = () => {
           ))
         )}
       </div>
-      {showForm && <BookingForm group={selectedGroup} isOpen={showForm} onClose={closeForm} />}
+      {showForm && (
+        <BookingForm
+          group={selectedGroup}
+          isOpen={showForm}
+          onClose={closeForm}
+        />
+      )}
     </div>
   );
 };
