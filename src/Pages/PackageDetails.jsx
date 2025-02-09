@@ -61,7 +61,7 @@ const PackageDetails = () => {
         </h2>
         <div className="flex items-center space-x-4 mb-6 justify-center">
           <p className="text-2xl font-semibold text-purple-700">Price: </p>
-          <p className="text-xl text-gray-800">₹{packageDetails.price}</p>
+          <p className="text-xl text-gray-800">₹{packageDetails.price} Onwards</p>
         </div>
         {/* Book Now Button */}
         <button className="bg-purple-700 text-white text-lg px-6 py-3 rounded-full shadow-md hover:bg-purple-800 transition duration-300 mb-8" onClick={handleBookNowClick}>
