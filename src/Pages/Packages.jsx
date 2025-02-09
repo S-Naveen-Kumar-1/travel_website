@@ -44,7 +44,7 @@ const Packages = () => {
     setIsFormOpen(true);
   }
 
-  const handleViewDetails = (pkg) => {
+const handleViewDetails = (pkg) => {
     navigate(`/package-details/${pkg.id}`);
 }
 

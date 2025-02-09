@@ -25,19 +25,19 @@ const blogs = [
       "https://via.placeholder.com/600x400?text=Dal+Lake",
       "https://via.placeholder.com/600x400?text=Snow+Capped+Mountains",
     ],
-    authorName: "Rohit Sharma",
+    authorName: "Pradeep Raj",
     authorImage:
-      "https://i3.wp.com/www.probatsman.com/wp-content/uploads/2023/06/Rohit-Sharma.jpg?strip=all", // Placeholder author image
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjxBNPGMGSmZFPjN0KBemfAP0M87bFE5h_A&s", // Placeholder author image
     totalLikes: 120,
     comments: [
       {
         text: "This place is so beautiful! I would love to visit Kashmir someday.",
-        authorName: "Alice",
+        authorName: "Nithin",
         timestamp: "2025-01-01T10:30:00Z",
       },
       {
         text: "The description of Dal Lake is so serene. Kashmir is on my bucket list!",
-        authorName: "Bob",
+        authorName: "JayaSurya",
         timestamp: "2025-01-02T14:15:00Z",
       },
     ],
@@ -63,19 +63,19 @@ const blogs = [
       "https://via.placeholder.com/600x400?text=Houseboat",
       "https://via.placeholder.com/600x400?text=Dal+Lake+Sunrise",
     ],
-    authorName: "Virat Kholi",
+    authorName: "Alok Verma",
     authorImage:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgRfkO7EMBYM1zBLptL1xFDXi9VWFTsoWbOg&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1lLrFvgnsMNvUcDd83Tpc-s48XBu_NnT89Q&s",
     totalLikes: 85,
     comments: [
       {
         text: "I can imagine how peaceful it must be to stay in a houseboat!",
-        authorName: "Charlie",
+        authorName: "Rameez",
         timestamp: "2025-01-03T09:45:00Z",
       },
       {
         text: "Dal Lake is a dream destination! This article really brings it to life.",
-        authorName: "David",
+        authorName: "Manoj",
         timestamp: "2025-01-04T11:00:00Z",
       },
     ],
@@ -101,19 +101,19 @@ const blogs = [
       "https://via.placeholder.com/600x400?text=Gulmarg+Gondola",
       "https://via.placeholder.com/600x400?text=Skiing+in+Gulmarg",
     ],
-    authorName: "Elon Musk",
+    authorName: "Kiran",
     authorImage:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq7QN7mNoJwm0XjwMXKcGbVokxaTRAksF9bA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdrxanBD1tp1k46pVYkSKor3G5_WAob_NMCw&s",
     totalLikes: 200,
     comments: [
       {
         text: "I love skiing! Gulmarg sounds like the perfect place for it.",
-        authorName: "Eve",
+        authorName: "Ravi",
         timestamp: "2025-01-05T08:30:00Z",
       },
       {
         text: "The views from the Gulmarg Gondola must be incredible.",
-        authorName: "Frank",
+        authorName: "Rahul",
         timestamp: "2025-01-05T12:00:00Z",
       },
     ],
@@ -137,9 +137,9 @@ const blogs = [
       "https://via.placeholder.com/600x400?text=Pangong+Lake",
       "https://via.placeholder.com/600x400?text=Nubra+Valley",
     ],
-    authorName: "Deepika Padukone",
+    authorName: "Arun",
     authorImage:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2a9EhzDjpXyKLRfR7wJtH9j7fZ0gdPfm38A&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC5O5QvhCdMBgg_a69vjWxbuRWfTu_N-vUFA&s",
     totalLikes: 175,
     comments: [
       {
@@ -180,7 +180,7 @@ const blogs = [
     comments: [
       {
         text: "Spiti Valley looks so peaceful and remote. I would love to visit.",
-        authorName: "Nina",
+        authorName: "Naveen",
         timestamp: "2025-01-06T10:30:00Z",
       },
       {

@@ -7,14 +7,18 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Blogs from "../components/Blogs";
 import AboutUs from "../components/AboutUs";
+import PaymentDetails from "../components/PaymentDetails";
+import PackagesHomePage from "../components/PackageInfoHome";
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <PackagesHomePage/>
       <Destinations />
       <Blogs />
       <AboutUs />
+      <PaymentDetails/>
       <Testimonials />
       <Footer />
     </>

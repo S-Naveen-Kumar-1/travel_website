@@ -11,6 +11,8 @@ import BlogView from '../components/BlogView'
 import Admin from './Admin'
 import PackageDetails from './PackageDetails'
 import AboutUs from './AboutUs'
+import SubPackages from './SubPackages'
+import AllPackages from './AllPackages'
 
 export const AllRoutes = () => {
   return (
@@ -19,16 +21,16 @@ export const AllRoutes = () => {
         <Route path='/all-blogs' element={<AllBlogs/>}></Route>
         <Route path='/all-hotels' element={<Hotels/>}></Route>
         <Route path='/all-destinations' element={<Destinations/>}></Route>
-        <Route path='/all-packages' element={<Packages/>}></Route>
+        <Route path='/all-packages' element={<AllPackages/>}></Route>
         <Route path='/shopping' element={<FoodItems/>}></Route>
         <Route path='/blogs' element={<BlogListing/>}></Route>
         <Route path="/blogs/:id" element={<BlogView />} />
         <Route path="/admin-hamsafran" element={<Admin />} />
-        <Route path="/package-details/:id" element={<PackageDetails />} />
+        {/* <Route path="/package-details/:id" element={<PackageDetails />} /> */}
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/packages/:packageId" element={<SubPackages />} />
+        <Route path="/packages/:packageId/:subPackageId" element={<PackageDetails />} />
 
-        
-        
     </Routes>
   )
 }
