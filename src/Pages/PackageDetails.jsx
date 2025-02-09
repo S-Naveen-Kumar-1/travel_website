@@ -19,6 +19,7 @@ const PackageDetails = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [images, setImages] = useState([]);
   const [isAutoSlide, setIsAutoSlide] = useState(true); // Flag to control auto-sliding
+  const [isBookingFormVisible, setIsBookingFormVisible] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top on page load
@@ -44,7 +45,14 @@ const PackageDetails = () => {
   if (!packageDetails) {
     return <div className="text-center text-xl text-gray-700">Loading...</div>;
   }
+  const handleBookNowClick = (subPkg) => {
+    
+    setIsBookingFormVisible(true);
+  };
 
+  const closeBookingForm = () => {
+    setIsBookingFormVisible(false);
+  };
   return (
     <div className="package-details py-16">
       <div className="text-center">
@@ -56,7 +64,7 @@ const PackageDetails = () => {
           <p className="text-xl text-gray-800">₹{packageDetails.price}</p>
         </div>
         {/* Book Now Button */}
-        <button className="bg-purple-700 text-white text-lg px-6 py-3 rounded-full shadow-md hover:bg-purple-800 transition duration-300 mb-8">
+        <button className="bg-purple-700 text-white text-lg px-6 py-3 rounded-full shadow-md hover:bg-purple-800 transition duration-300 mb-8" onClick={handleBookNowClick}>
           Book Now
         </button>
       </div>
@@ -166,7 +174,34 @@ const PackageDetails = () => {
           </div>
         </div>
       </div>
-
+  {/* Booking Form Slide In */}
+  {isBookingFormVisible && (
+        <div className="fixed top-0 right-0 w-full md:w-1/3 bg-white p-8 shadow-xl z-50 transform transition-transform duration-500 ease-in-out" style={{ transform: isBookingFormVisible ? 'translateX(0)' : 'translateX(100%)' }}>
+          <h3 className="text-2xl font-bold text-center mb-4">Booking Form</h3>
+          <form>
+            <div className="mb-4">
+              <label className="block text-sm font-semibold mb-2">Full Name</label>
+              <input type="text" className="w-full p-2 border border-gray-300 rounded-lg" placeholder="Enter your full name" />
+            </div>
+            <div className="mb-4">
+              <label className="block text-sm font-semibold mb-2">Email Address</label>
+              <input type="email" className="w-full p-2 border border-gray-300 rounded-lg" placeholder="Enter your email" />
+            </div>
+            <div className="mb-4">
+              <label className="block text-sm font-semibold mb-2">Phone Number</label>
+              <input type="text" className="w-full p-2 border border-gray-300 rounded-lg" placeholder="Enter your phone number" />
+            </div>
+            <div className="mb-4">
+              <label className="block text-sm font-semibold mb-2">Message</label>
+              <textarea className="w-full p-2 border border-gray-300 rounded-lg" placeholder="Any special request?" />
+            </div>
+            <button className="w-full bg-blue-500 text-white py-3 px-8 rounded-lg shadow-lg" type="submit">
+              Submit Booking
+            </button>
+          </form>
+          <button onClick={closeBookingForm} className="absolute top-2 right-2 text-xl text-red-600">&times;</button>
+        </div>
+      )}
       <Footer className="w-full mt-12" />
     </div>
   );
