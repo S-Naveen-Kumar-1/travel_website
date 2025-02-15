@@ -18,7 +18,7 @@ import {
   FaHiking,
   FaFirstAid,
   FaSun,
-  FaLightbulb
+  FaLightbulb,
 } from "react-icons/fa";
 import Footer from "../components/Footer";
 import ItinerarySection from "../components/ItinerarySection";
@@ -136,49 +136,100 @@ const PackageDetails = () => {
             <ItinerarySection itinerary={packageDetails.itinerary} />
 
             <div className="mb-6">
-            <h3 className="text-2xl font-semibold text-purple-700 mb-4">Inclusions</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {packageDetails.inclusions.map((item, index) => (
-                <li key={index} className="flex items-center text-gray-800 text-lg">
-                  <FaCheckCircle className="text-green-600 text-xl mr-2" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+              <h3 className="text-2xl font-semibold text-purple-700 mb-4">
+                Inclusions
+              </h3>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {packageDetails.inclusions.map((item, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center text-gray-800 text-lg"
+                  >
+                    <FaCheckCircle className="text-green-600 text-xl mr-2" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Exclusions Section */}
-          <div className="mb-6">
-            <h3 className="text-2xl font-semibold text-purple-700 mb-4">Exclusions</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {packageDetails.exclusions.map((item, index) => (
-                <li key={index} className="flex items-center text-gray-800 text-lg">
-                  <FaTimesCircle className="text-red-600 text-xl mr-2" />
-                  <span>{item}</span>
+            {/* Exclusions Section */}
+            <div className="mb-6">
+              <h3 className="text-2xl font-semibold text-purple-700 mb-4">
+                Exclusions
+              </h3>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {packageDetails.exclusions.map((item, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center text-gray-800 text-lg"
+                  >
+                    <FaTimesCircle className="text-red-600 text-xl mr-2" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Essentials to Carry Section */}
+            <div className="mt-8">
+              <h3 className="text-2xl font-semibold text-purple-700 mb-4">
+                Important Things to Carry
+              </h3>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-800 text-lg">
+                <li className="flex items-center">
+                  <FaHiking className="text-purple-700 mr-2" /> A rucksack bag
+                  and a day pack
                 </li>
-              ))}
-            </ul>
-          </div>
-             
-          {/* Essentials to Carry Section */}
-          <div className="mt-8">
-            <h3 className="text-2xl font-semibold text-purple-700 mb-4">Important Things to Carry</h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-800 text-lg">
-              <li className="flex items-center"><FaHiking className="text-purple-700 mr-2"/> A rucksack bag and a day pack</li>
-              <li className="flex items-center"><FaTint className="text-purple-700 mr-2"/> 3-litre water bladder or water bottle</li>
-              <li className="flex items-center"><FaTshirt className="text-purple-700 mr-2"/> Sun cap, woolen cap, UV protected sunglasses</li>
-              <li className="flex items-center"><FaUserShield className="text-purple-700 mr-2"/> 1 cotton long sleeves, 2 short sleeve t-shirts</li>
-              <li className="flex items-center"><FaUserShield className="text-purple-700 mr-2"/> 1 fleece jacket, 1 thick down jacket, gloves</li>
-              <li className="flex items-center"><FaUserShield className="text-purple-700 mr-2"/> 2 long pants (trek pants and cargo pants preferred)</li>
-              <li className="flex items-center"><FaSocks className="text-purple-700 mr-2"/> 4 sets of undergarments, 2 pairs of socks</li>
-              <li className="flex items-center"><FaUmbrella className="text-purple-700 mr-2"/> Small towel, rain jacket or poncho</li>
-              <li className="flex items-center"><FaHiking className="text-purple-700 mr-2"/> Waterproof hiking boots, flip-flops/sandals</li>
-              <li className="flex items-center"><FaFirstAid className="text-purple-700 mr-2"/> Glucose powder, medicines for headaches, altitude sickness</li>
-              <li className="flex items-center"><FaFirstAid className="text-purple-700 mr-2"/> Dettol, bandages, cotton</li>
-              <li className="flex items-center"><FaSun className="text-purple-700 mr-2"/> Sunscreen (minimum SPF40), lip balm, cold creams, body spray</li>
-              <li className="flex items-center"><FaLightbulb className="text-purple-700 mr-2"/> LED torch light</li>
-            </ul>
-          </div>
+                <li className="flex items-center">
+                  <FaTint className="text-purple-700 mr-2" /> 3-litre water
+                  bladder or water bottle
+                </li>
+                <li className="flex items-center">
+                  <FaTshirt className="text-purple-700 mr-2" /> Sun cap, woolen
+                  cap, UV protected sunglasses
+                </li>
+                <li className="flex items-center">
+                  <FaUserShield className="text-purple-700 mr-2" /> 1 cotton
+                  long sleeves, 2 short sleeve t-shirts
+                </li>
+                <li className="flex items-center">
+                  <FaUserShield className="text-purple-700 mr-2" /> 1 fleece
+                  jacket, 1 thick down jacket, gloves
+                </li>
+                <li className="flex items-center">
+                  <FaUserShield className="text-purple-700 mr-2" /> 2 long pants
+                  (trek pants and cargo pants preferred)
+                </li>
+                <li className="flex items-center">
+                  <FaSocks className="text-purple-700 mr-2" /> 4 sets of
+                  undergarments, 2 pairs of socks
+                </li>
+                <li className="flex items-center">
+                  <FaUmbrella className="text-purple-700 mr-2" /> Small towel,
+                  rain jacket or poncho
+                </li>
+                <li className="flex items-center">
+                  <FaHiking className="text-purple-700 mr-2" /> Waterproof
+                  hiking boots, flip-flops/sandals
+                </li>
+                <li className="flex items-center">
+                  <FaFirstAid className="text-purple-700 mr-2" /> Glucose
+                  powder, medicines for headaches, altitude sickness
+                </li>
+                <li className="flex items-center">
+                  <FaFirstAid className="text-purple-700 mr-2" /> Dettol,
+                  bandages, cotton
+                </li>
+                <li className="flex items-center">
+                  <FaSun className="text-purple-700 mr-2" /> Sunscreen (minimum
+                  SPF40), lip balm, cold creams, body spray
+                </li>
+                <li className="flex items-center">
+                  <FaLightbulb className="text-purple-700 mr-2" /> LED torch
+                  light
+                </li>
+              </ul>
+            </div>
             {/* Cancellation Policy */}
             <div className="mb-6">
               <h3 className="text-2xl font-semibold text-purple-700 mb-4">
