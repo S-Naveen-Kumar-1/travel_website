@@ -1,116 +1,286 @@
 {
   "kashmir": [
     {
-      "id": "kashmir-paradise-tour",
-      "name": "Kashmir Paradise Tour",
+      "id": "the-nomads-quest",
+      "name": "The Nomads Quest (nirvana)",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
-      "description": "Experience the beauty of the valleys and lakes of Kashmir.",
-      "detailedDescription": "Explore the mesmerizing beauty of Kashmir with a visit to its famous valleys, lakes, and gardens.",
+      "days": 9,
+      "night": 8,
+      "description": "Experience the beauty of the valleys and lakes of Kashmir through an adventurous trek.",
+      "detailedDescription": "Embark on the mesmerizing Kashmir Great Lakes Trek, passing through breathtaking landscapes, alpine lakes, and meadows.",
       "itinerary": [
-        "Day 1: Arrival in Srinagar, transfer to Houseboat.",
-        "Day 2: Explore Dal Lake by Shikara, Mughal Gardens visit.",
-        "Day 3: Visit Pahalgam and Betaab Valley.",
-        "Day 4: Explore Gulmarg and return to Srinagar."
+        {
+          "day": 1,
+          "title": "Srinagar to Sonamarg",
+          "description": "Drive from Srinagar to Sonamarg (7800 ft). The trek starts at Shitkadi, a few kilometers ahead of Sonamarg. Overnight stay at Sonamarg.",
+          "icon": "🚖"
+        },
+        {
+          "day": 2,
+          "title": "Sonamarg to Nichnai",
+          "description": "Trek from Sonamarg (7800 ft) to Nichnai (11,500 ft), covering 11.6 km in about 6 hours. Gradual ascent to Tabletop, lunch en route, and arrival at Nichnai campsite by afternoon.",
+          "icon": "🥾"
+        },
+        {
+          "day": 3,
+          "title": "Nichnai to Vishnusar",
+          "description": "Trek from Nichnai (11,500 ft) to Vishnusar (12,000 ft), covering 13.5 km in 6 hours. Cross Nichnai Pass and walk through beautiful meadows before reaching Vishnusar Lake.",
+          "icon": "🏔️"
+        },
+        {
+          "day": 4,
+          "title": "Vishnusar to Gadsar",
+          "description": "Trek from Vishnusar (12,000 ft) to Gadsar (12,500 ft), covering 16 km in 5 hours. Climb to Gadsar Pass (13,800 ft) and descend through flower-filled meadows to Gadsar Lake.",
+          "icon": "🏞️"
+        },
+        {
+          "day": 5,
+          "title": "Gadsar to Satsar",
+          "description": "Trek from Gadsar (12,500 ft) to Satsar (12,000 ft), covering 11.5 km in 6 hours. River crossing and walk along mountain ridges, passing an army camp and multiple lakes.",
+          "icon": "🌄"
+        },
+        {
+          "day": 6,
+          "title": "Satsar to Gangabal Twin Lakes",
+          "description": "Trek from Satsar (12,000 ft) to Gangabal (11,500 ft), covering 9 km in 6 hours. Cross a boulder zone and reach Zaj Pass (12,900 ft) before descending to Nandkul Lake.",
+          "icon": "🏕️"
+        },
+        {
+          "day": 7,
+          "title": "Buffer Day",
+          "description": "A leisure day for trekkers to explore Gangabal Lake, relax, and enjoy nature.",
+          "icon": "🛶"
+        },
+        {
+          "day": 8,
+          "title": "Gangabal to Naranag",
+          "description": "Trek from Gangabal (11,500 ft) to Naranag (7,450 ft), covering 13 km in 6 hours. A steep descent through lush forests before reaching Naranag, marking the end of the trek.",
+          "icon": "🌲"
+        }
       ],
       "inclusions": [
-        "Accommodation in 3-star hotels/houseboats.",
-        "Breakfast and Dinner.",
-        "Sightseeing tours as per itinerary.",
-        "Shikara ride on Dal Lake."
+        "All accommodation during the trek on a sharing basis in tents.",
+        "All vegetarian meals during the trek.",
+        "Transportation from Srinagar to Srinagar.",
+        "Tents, sleeping bags, and all other camping gear.",
+        "Safety equipment (med kit, oxygen cylinders, oximeter, etc.).",
+        "Cooks, helpers, guides, porters, and mules.",
+        "Trekking permits and forest camping fees."
       ],
       "exclusions": [
-        "Personal expenses like shopping.",
-        "Lunch and beverages.",
-        "Travel insurance."
+        "Backpack offloading charges.",
+        "Tips for the local team.",
+        "Stay and food in Srinagar before/after the trek.",
+        "Personal backpack carrying during the trek."
       ],
       "price": 25000
     },
     {
-      "id": "kashmir-adventure-trek",
-      "name": "Kashmir Adventure Trek",
+      "id": "green-escape",
+      "name": "Green Escape",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
-      "description": "Enjoy thrilling treks in the stunning landscapes of Kashmir.",
-      "detailedDescription": "Embark on a trekking adventure in the lush green meadows and snow-capped mountains of Kashmir.",
+      "days": 5,
+      "night": 4,
+      "description": "Discover the breathtaking beauty of Kashmir with an unforgettable escape into its valleys and lakes.",
+      "detailedDescription": "Enjoy a peaceful yet thrilling getaway in the heart of Kashmir, exploring its serene lakes, lush meadows, and snow-capped mountains.",
       "itinerary": [
-        "Day 1: Arrive in Srinagar and transfer to Pahalgam.",
-        "Day 2: Start the trek to Lidderwat Valley.",
-        "Day 3: Trek to Tarsar Lake and enjoy the stunning views.",
-        "Day 4: Return to Srinagar."
+        {
+          "day": 1,
+          "title": "Arrival at Srinagar",
+          "description": "Arrive at Srinagar and settle into your accommodation, preparing for the upcoming adventure.",
+          "icon": "🚖"
+        },
+        {
+          "day": 2,
+          "title": "Gulmarg Day Excursion",
+          "description": "Explore the beauty of Gulmarg, take a Gondola ride, and immerse yourself in the scenic landscapes.",
+          "icon": "⛷️"
+        },
+        {
+          "day": 3,
+          "title": "Srinagar to Pahalgam",
+          "description": "Drive to Pahalgam, enjoy the valley's lush green beauty, and explore its charming surroundings.",
+          "icon": "🏔️"
+        },
+        {
+          "day": 4,
+          "title": "Aru, Betaab Valley & Chandanwari",
+          "description": "Visit the picturesque Aru Valley, the stunning Betaab Valley, and Chandanwari for an enchanting experience.",
+          "icon": "🌲"
+        },
+        {
+          "day": 5,
+          "title": "Departure",
+          "description": "Bid farewell to Kashmir and depart with unforgettable memories.",
+          "icon": "✈️"
+        }
       ],
       "inclusions": [
-        "Trekking permits and guide.",
-        "Camping equipment.",
-        "Accommodation in tents.",
-        "Meals (Breakfast, Lunch, Dinner)."
+        "Meet & Greet Assistance on arrival.",
+        "05 Night’s accommodation in 3-star hotels.",
+        "Meal plan MAP.",
+        "Welcome drink on arrival in hotels/houseboat.",
+        "Local cab for Aru, Betaab Valley & Chandanwari.",
+        "All transfers and sightseeing by AC/Non-AC cab.",
+        "All applicable taxes and charges, parking charges, drivers wages."
       ],
       "exclusions": [
-        "Personal trekking gear.",
-        "Meals outside the itinerary.",
-        "Tips for guides and porters."
+        "Any kind of airfare.",
+        "Entrance fees of Gardens and Monuments.",
+        "Lunch, drinks, coffee, tea, tips.",
+        "Horse Ride/Cab to Zojila & Zero Point.",
+        "Anything not specified in inclusions."
       ],
       "price": 30000
     },
     {
-      "id": "romantic-kashmir-getaway",
-      "name": "Romantic Kashmir Getaway",
+      "id": "honeymoon-special",
+      "name": "Honeymoon Special",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
+      "days": 6,
+      "night": 5,
       "description": "Perfect for couples looking for a scenic retreat.",
       "detailedDescription": "A romantic journey through Kashmir’s most beautiful landscapes, perfect for couples seeking peace and serenity.",
       "itinerary": [
-        "Day 1: Arrive in Srinagar, transfer to houseboat.",
-        "Day 2: Shikara ride on Dal Lake, visit Mughal Gardens.",
-        "Day 3: Day trip to Sonamarg, explore the meadows.",
-        "Day 4: Return to Srinagar for departure."
+        {
+          "day": 1,
+          "title": "Arrival at Srinagar & Sightseeing",
+          "description": "Arrive at Srinagar Airport, meet our driver, and check-in. Visit the famous Mughal Gardens, Shankaracharya Temple followed by a Shikara Ride in the evening. Try local cuisines at nearby restaurants. Return to the hotel for dinner & overnight stay.",
+          "icon": "🚖"
+        },
+        {
+          "day": 2,
+          "title": "Srinagar Local Excursion",
+          "description": "After breakfast, leave for Sonmarg - the Meadow of Gold. Spend the day exploring its green meadows and majestic mountains. Enjoy a pony ride to Thajiwas Glacier. Return to Srinagar for overnight stay.",
+          "icon": "🏞️"
+        },
+        {
+          "day": 3,
+          "title": "Srinagar to Gulmarg",
+          "description": "Post breakfast, drive to Gulmarg. Enjoy the Gondola ride, Asia’s Highest Cable Car, among lush green forests covered with snow. Visit Affarwat Peak at 13,500 ft. above sea level for breathtaking views. Overnight stay in Gulmarg.",
+          "icon": "⛷️"
+        },
+        {
+          "day": 4,
+          "title": "Gulmarg to Pahalgam",
+          "description": "After breakfast, proceed to Pahalgam - the Valley of Shepherds. Check-in to the hotel, explore the local market, and take a pony ride to Baisaran for stunning views. Enjoy a warm dinner at the hotel. Overnight stay in Pahalgam.",
+          "icon": "🏔️"
+        },
+        {
+          "day": 5,
+          "title": "Aru & Betaab Valley",
+          "description": "After breakfast, leave for a day excursion to Aru Valley & Betaab Valley. Enjoy the scenic meadows, lakes, and mountains. Explore the base camp for trekking to Kolhai Glacier and Tarsar Lake. Betaab Valley lies en route to Amarnath Temple. Overnight stay in a houseboat.",
+          "icon": "🌲"
+        },
+        {
+          "day": 6,
+          "title": "Departure",
+          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
+          "icon": "✈️"
+        }
       ],
       "inclusions": [
-        "Accommodation in Houseboats and hotels.",
-        "Shikara ride on Dal Lake.",
-        "Breakfast and Dinner.",
-        "Sightseeing as per itinerary."
+        "Meet & Greet Assistance on arrival.",
+        "05 Night’s accommodation in 3-star hotels.",
+        "Meal plan MAP (Breakfast & Dinner).",
+        "Welcome drink on arrival in hotels/houseboat.",
+        "Local cab for Aru, Betaab Valley & Chandanwari.",
+        "All transfers and sightseeing by AC/Non-AC cab.",
+        "All applicable taxes and charges, parking fees, driver wages.",
+        "1-hour private Shikara ride at Dal Lake."
       ],
-      "exclusions": ["Lunch and personal expenses.", "Travel insurance."],
+      "exclusions": [
+        "Any kind of airfare.",
+        "Entrance fees for gardens and monuments.",
+        "Lunch, drinks, coffee, tea, and tips.",
+        "Gondola ride / Horse Ride.",
+        "Aru, Chandanwari & Betaab Valley Sightseeing."
+      ],
       "price": 35000
     },
     {
-      "id": "winter-wonderland",
-      "name": "Winter Wonderland",
+      "id": "winter-twilight-kashmir",
+      "name": "Winter Twilight Kashmir",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
+      "days": 6,
+      "night": 5,
       "description": "Explore Kashmir in winter with snow-covered beauty.",
       "detailedDescription": "Discover the charm of Kashmir in the winter months, when it is covered in pristine snow and offers winter sports like skiing.",
       "itinerary": [
-        "Day 1: Arrival in Srinagar and check-in at a hotel.",
-        "Day 2: Visit Gulmarg for skiing and snow activities.",
-        "Day 3: Explore Pahalgam and the snow-covered landscapes.",
-        "Day 4: Departure from Srinagar."
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar & Sightseeing",
+          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
+          "icon": "🚖"
+        },
+        {
+          "day": 2,
+          "title": "Gulmarg Adventure",
+          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
+          "icon": "⛷️"
+        },
+        {
+          "day": 3,
+          "title": "Pahalgam - The Valley of Shepherds",
+          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
+          "icon": "🏔️"
+        },
+        {
+          "day": 4,
+          "title": "Aru, Betaab Valley & Chandanwari",
+          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
+          "icon": "🌲"
+        },
+        {
+          "day": 5,
+          "title": "Doodhpathri - The Valley of Milk",
+          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
+          "icon": "🌿"
+        },
+        {
+          "day": 6,
+          "title": "Departure from Srinagar",
+          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
+          "icon": "✈️"
+        }
       ],
       "inclusions": [
-        "Accommodation in 3-star hotels.",
-        "Skiing and snow activities.",
-        "Meals (Breakfast, Dinner).",
-        "Sightseeing tours."
+        "Meet & Greet Assistance on arrival.",
+        "05 Night’s accommodation in 3-star hotels.",
+        "Meal plan MAP (Breakfast & Dinner).",
+        "Welcome drink on arrival at hotels/houseboat.",
+        "Local cab for Aru, Betaab Valley & Chandanwari.",
+        "All transfers and sightseeing by AC/Non-AC cab.",
+        "All applicable taxes and charges, parking fees, driver wages."
       ],
-      "exclusions": ["Personal expenses.", "Lunch and snacks."],
+      "exclusions": [
+        "Any kind of airfare.",
+        "Entrance fees for gardens and monuments.",
+        "Lunch, drinks, coffee, tea, and tips.",
+        "Horse ride/cab to Zojila & Zero Point.",
+        "Anything not specified in inclusions."
+      ],
       "price": 35000
     },
     {
-      "id": "kashmir-cultural-tour",
-      "name": "Kashmir Cultural Tour",
+      "id": "thrill-trek-escape",
+      "name": "Thrill Trek Escape",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
@@ -118,21 +288,76 @@
       ],
       "description": "Discover the rich traditions and culture of Kashmir.",
       "detailedDescription": "A cultural tour through Kashmir to experience its vibrant history, traditional art, and craftsmanship.",
+      "days": 8,
+      "night": 7,
       "itinerary": [
-        "Day 1: Arrival in Srinagar, visit Shankaracharya Temple.",
-        "Day 2: Explore Mughal Gardens, visit local handicraft markets.",
-        "Day 3: Visit the famous Hazratbal Shrine and explore Srinagar.",
-        "Day 4: Depart from Srinagar."
+        {
+          "day": 1,
+          "title": "Srinagar to Sonamarg",
+          "description": "Altitude: 7800 ft | Time Taken: 3 Hrs Drive. The trek begins at Shitkadi, a few kilometers ahead of Sonamarg. Pickup at 2.30 pm from Srinagar. Drive to the base camp takes around 2 hours. Night halt at Sonamarg.",
+          "icon": "🚖"
+        },
+        {
+          "day": 2,
+          "title": "Sonamarg to Nachnai",
+          "description": "Altitude: 7800 ft to 11,500 ft | Time Taken: 6 hours, 11.6 km. The trek ascends gradually to the tabletop point. Continue hiking past the lunch point, reaching Nachnai campsite by late afternoon.",
+          "icon": "⛺"
+        },
+        {
+          "day": 3,
+          "title": "Nachnai to Vishnusar",
+          "description": "Altitude: 11,500 ft to 12,000 ft | Time Taken: 6 hours, 13.5 km. A gradual ascent to Nichnai Pass (12,000 ft) followed by a descent to the lunch point. A normal walk through meadows leads to Vishnusar Lake campsite.",
+          "icon": "🏞️"
+        },
+        {
+          "day": 4,
+          "title": "Vishnusar Lake to Gadsar",
+          "description": "Altitude: 12,000 ft to 12,500 ft | Time Taken: 5 hours, 16 km. Trek passes through Kishansar Lake and ascends to Gadsar Pass (13,800 ft). Beautiful flower-laden meadows lead to Gadsar Lake and campsite.",
+          "icon": "🌸"
+        },
+        {
+          "day": 5,
+          "title": "Gadsar to Satsar",
+          "description": "Altitude: 12,500 ft to 12,000 ft | Time Taken: 6 hours, 11.5 km. Cross a river and ascend to a high point offering views of Nanga Parbat. A gradual descent leads to the Satsar campsite near the famous seven lakes.",
+          "icon": "🏕️"
+        },
+        {
+          "day": 6,
+          "title": "Satsar to Gangabal Twin Lakes",
+          "description": "Altitude: 12,000 ft to 11,500 ft | Time Taken: 6 hours, 9 km. The trail includes a boulder zone and an ascent to the second-highest pass (12,900 ft). Views of four lakes before descending to Nandkul Lake campsite.",
+          "icon": "🏔️"
+        },
+        {
+          "day": 7,
+          "title": "Buffer Day",
+          "description": "A rest day at Gangabal Lake. Enjoy optional activities like exploration and relaxation in the beautiful surroundings.",
+          "icon": "🌿"
+        },
+        {
+          "day": 8,
+          "title": "Gangabal to Naranag",
+          "description": "Altitude: 11,500 ft to 7,450 ft | Time Taken: 6 hours, 13 km. A steep descent leads to Naranag. Option to stay at Sonmarg or Srinagar, depending on departure.",
+          "icon": "⛰️"
+        }
       ],
       "inclusions": [
-        "Accommodation in hotels.",
-        "Meals (Breakfast, Dinner).",
-        "Sightseeing as per itinerary.",
-        "Cultural performances."
+        "All accommodation during the trek on a sharing basis in tents.",
+        "All meals during the trek (vegetarian).",
+        "Transportation from Srinagar to Srinagar.",
+        "Tents, sleeping bags, and all other camping gear.",
+        "Safety equipment (med kit, oxygen cylinders, oximeter, etc.).",
+        "Cooks, helpers, guides, porters, and mules.",
+        "Trekking permits and forest camping fees."
       ],
-      "exclusions": ["Personal expenses.", "Meals outside the itinerary."],
+      "exclusions": [
+        "Backpack offloading charges.",
+        "Tips for the local team.",
+        "Stay and food at Srinagar.",
+        "Backpack carrying service."
+      ],
       "price": 35000
-    }
+}
+
   ],
   "jammu": [
     {
@@ -143,19 +368,64 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
+      "days": 6,
+      "night": 5,
       "description": "A spiritual journey to the sacred shrine of Vaishno Devi.",
       "detailedDescription": "A spiritually enriching pilgrimage to the Vaishno Devi Temple located on the Trikuta Mountains.",
       "itinerary": [
-        "Day 1: Arrive in Katra, start the trek to Vaishno Devi.",
-        "Day 2: Visit the Vaishno Devi Temple.",
-        "Day 3: Return from Katra."
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar & Sightseeing",
+          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
+          "icon": "🚖"
+        },
+        {
+          "day": 2,
+          "title": "Gulmarg Adventure",
+          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
+          "icon": "⛷️"
+        },
+        {
+          "day": 3,
+          "title": "Pahalgam - The Valley of Shepherds",
+          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
+          "icon": "🏔️"
+        },
+        {
+          "day": 4,
+          "title": "Aru, Betaab Valley & Chandanwari",
+          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
+          "icon": "🌲"
+        },
+        {
+          "day": 5,
+          "title": "Doodhpathri - The Valley of Milk",
+          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
+          "icon": "🌿"
+        },
+        {
+          "day": 6,
+          "title": "Departure from Srinagar",
+          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
+          "icon": "✈️"
+        }
       ],
       "inclusions": [
-        "Accommodation in hotels.",
-        "Meals (Breakfast, Dinner).",
-        "Trekking permits."
+        "Meet & Greet Assistance on arrival.",
+        "05 Night’s accommodation in 3-star hotels.",
+        "Meal plan MAP (Breakfast & Dinner).",
+        "Welcome drink on arrival at hotels/houseboat.",
+        "Local cab for Aru, Betaab Valley & Chandanwari.",
+        "All transfers and sightseeing by AC/Non-AC cab.",
+        "All applicable taxes and charges, parking fees, driver wages."
       ],
-      "exclusions": ["Personal expenses.", "Meals outside the itinerary."],
+      "exclusions": [
+        "Any kind of airfare.",
+        "Entrance fees for gardens and monuments.",
+        "Lunch, drinks, coffee, tea, and tips.",
+        "Horse ride/cab to Zojila & Zero Point.",
+        "Anything not specified in inclusions."
+      ],
       "price": 35000
     },
     {
@@ -166,19 +436,64 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
+      "days": 6,
+      "night": 5,
       "description": "Explore the historical and cultural landmarks of Jammu.",
       "detailedDescription": "An in-depth tour of Jammu’s ancient temples, forts, and historical monuments.",
       "itinerary": [
-        "Day 1: Arrive in Jammu, visit the Raghunath Temple.",
-        "Day 2: Explore the Mubarak Mandi Palace and Bahu Fort.",
-        "Day 3: Depart from Jammu."
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar & Sightseeing",
+          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
+          "icon": "🚖"
+        },
+        {
+          "day": 2,
+          "title": "Gulmarg Adventure",
+          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
+          "icon": "⛷️"
+        },
+        {
+          "day": 3,
+          "title": "Pahalgam - The Valley of Shepherds",
+          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
+          "icon": "🏔️"
+        },
+        {
+          "day": 4,
+          "title": "Aru, Betaab Valley & Chandanwari",
+          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
+          "icon": "🌲"
+        },
+        {
+          "day": 5,
+          "title": "Doodhpathri - The Valley of Milk",
+          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
+          "icon": "🌿"
+        },
+        {
+          "day": 6,
+          "title": "Departure from Srinagar",
+          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
+          "icon": "✈️"
+        }
       ],
       "inclusions": [
-        "Accommodation in hotels.",
-        "Meals (Breakfast, Dinner).",
-        "Sightseeing as per itinerary."
+        "Meet & Greet Assistance on arrival.",
+        "05 Night’s accommodation in 3-star hotels.",
+        "Meal plan MAP (Breakfast & Dinner).",
+        "Welcome drink on arrival at hotels/houseboat.",
+        "Local cab for Aru, Betaab Valley & Chandanwari.",
+        "All transfers and sightseeing by AC/Non-AC cab.",
+        "All applicable taxes and charges, parking fees, driver wages."
       ],
-      "exclusions": ["Personal expenses.", "Meals outside the itinerary."],
+      "exclusions": [
+        "Any kind of airfare.",
+        "Entrance fees for gardens and monuments.",
+        "Lunch, drinks, coffee, tea, and tips.",
+        "Horse ride/cab to Zojila & Zero Point.",
+        "Anything not specified in inclusions."
+      ],
       "price": 35000
     },
     {
@@ -189,20 +504,64 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
+      "days": 6,
+      "night": 5,
       "description": "Thrilling adventures in the scenic hills of Patnitop.",
       "detailedDescription": "Engage in various adventure activities like trekking, paragliding, and skiing in the hills of Patnitop.",
       "itinerary": [
-        "Day 1: Arrive in Patnitop, check-in at a hotel.",
-        "Day 2: Paragliding and trekking in the hills.",
-        "Day 3: Skiing (seasonal).",
-        "Day 4: Return to Jammu."
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar & Sightseeing",
+          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
+          "icon": "🚖"
+        },
+        {
+          "day": 2,
+          "title": "Gulmarg Adventure",
+          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
+          "icon": "⛷️"
+        },
+        {
+          "day": 3,
+          "title": "Pahalgam - The Valley of Shepherds",
+          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
+          "icon": "🏔️"
+        },
+        {
+          "day": 4,
+          "title": "Aru, Betaab Valley & Chandanwari",
+          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
+          "icon": "🌲"
+        },
+        {
+          "day": 5,
+          "title": "Doodhpathri - The Valley of Milk",
+          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
+          "icon": "🌿"
+        },
+        {
+          "day": 6,
+          "title": "Departure from Srinagar",
+          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
+          "icon": "✈️"
+        }
       ],
       "inclusions": [
-        "Accommodation in hotels.",
-        "Adventure activities (Trekking, Paragliding, Skiing).",
-        "Meals (Breakfast, Dinner)."
+        "Meet & Greet Assistance on arrival.",
+        "05 Night’s accommodation in 3-star hotels.",
+        "Meal plan MAP (Breakfast & Dinner).",
+        "Welcome drink on arrival at hotels/houseboat.",
+        "Local cab for Aru, Betaab Valley & Chandanwari.",
+        "All transfers and sightseeing by AC/Non-AC cab.",
+        "All applicable taxes and charges, parking fees, driver wages."
       ],
-      "exclusions": ["Personal expenses.", "Lunch and snacks."],
+      "exclusions": [
+        "Any kind of airfare.",
+        "Entrance fees for gardens and monuments.",
+        "Lunch, drinks, coffee, tea, and tips.",
+        "Horse ride/cab to Zojila & Zero Point.",
+        "Anything not specified in inclusions."
+      ],
       "price": 35000
     },
     {
@@ -213,19 +572,64 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
+      "days": 6,
+      "night": 5,
       "description": "Discover the wildlife and natural beauty of Jammu.",
       "detailedDescription": "A safari through Jammu’s rich wildlife reserves, perfect for nature lovers and photographers.",
       "itinerary": [
-        "Day 1: Arrive in Jammu and transfer to the wildlife reserve.",
-        "Day 2: Full-day safari and nature walk.",
-        "Day 3: Return to Jammu."
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar & Sightseeing",
+          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
+          "icon": "🚖"
+        },
+        {
+          "day": 2,
+          "title": "Gulmarg Adventure",
+          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
+          "icon": "⛷️"
+        },
+        {
+          "day": 3,
+          "title": "Pahalgam - The Valley of Shepherds",
+          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
+          "icon": "🏔️"
+        },
+        {
+          "day": 4,
+          "title": "Aru, Betaab Valley & Chandanwari",
+          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
+          "icon": "🌲"
+        },
+        {
+          "day": 5,
+          "title": "Doodhpathri - The Valley of Milk",
+          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
+          "icon": "🌿"
+        },
+        {
+          "day": 6,
+          "title": "Departure from Srinagar",
+          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
+          "icon": "✈️"
+        }
       ],
       "inclusions": [
-        "Safari permits.",
-        "Accommodation in jungle lodges.",
-        "Meals (Breakfast, Lunch, Dinner)."
+        "Meet & Greet Assistance on arrival.",
+        "05 Night’s accommodation in 3-star hotels.",
+        "Meal plan MAP (Breakfast & Dinner).",
+        "Welcome drink on arrival at hotels/houseboat.",
+        "Local cab for Aru, Betaab Valley & Chandanwari.",
+        "All transfers and sightseeing by AC/Non-AC cab.",
+        "All applicable taxes and charges, parking fees, driver wages."
       ],
-      "exclusions": ["Personal expenses.", "Meals outside the itinerary."],
+      "exclusions": [
+        "Any kind of airfare.",
+        "Entrance fees for gardens and monuments.",
+        "Lunch, drinks, coffee, tea, and tips.",
+        "Horse ride/cab to Zojila & Zero Point.",
+        "Anything not specified in inclusions."
+      ],
       "price": 35000
     },
     {
@@ -236,19 +640,64 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
+      "days": 6,
+      "night": 5,
       "description": "Experience the flavors and traditions of Jammu.",
       "detailedDescription": "A tour focused on the rich food culture of Jammu, including visits to local markets and restaurants.",
       "itinerary": [
-        "Day 1: Arrive in Jammu, visit local food markets.",
-        "Day 2: Taste local delicacies and explore cultural landmarks.",
-        "Day 3: Departure."
+        {
+          "day": 1,
+          "title": "Arrival in Srinagar & Sightseeing",
+          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
+          "icon": "🚖"
+        },
+        {
+          "day": 2,
+          "title": "Gulmarg Adventure",
+          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
+          "icon": "⛷️"
+        },
+        {
+          "day": 3,
+          "title": "Pahalgam - The Valley of Shepherds",
+          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
+          "icon": "🏔️"
+        },
+        {
+          "day": 4,
+          "title": "Aru, Betaab Valley & Chandanwari",
+          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
+          "icon": "🌲"
+        },
+        {
+          "day": 5,
+          "title": "Doodhpathri - The Valley of Milk",
+          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
+          "icon": "🌿"
+        },
+        {
+          "day": 6,
+          "title": "Departure from Srinagar",
+          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
+          "icon": "✈️"
+        }
       ],
       "inclusions": [
-        "Accommodation in hotels.",
-        "Meals (Breakfast, Dinner).",
-        "Food tour."
+        "Meet & Greet Assistance on arrival.",
+        "05 Night’s accommodation in 3-star hotels.",
+        "Meal plan MAP (Breakfast & Dinner).",
+        "Welcome drink on arrival at hotels/houseboat.",
+        "Local cab for Aru, Betaab Valley & Chandanwari.",
+        "All transfers and sightseeing by AC/Non-AC cab.",
+        "All applicable taxes and charges, parking fees, driver wages."
       ],
-      "exclusions": ["Personal expenses.", "Meals outside the itinerary."],
+      "exclusions": [
+        "Any kind of airfare.",
+        "Entrance fees for gardens and monuments.",
+        "Lunch, drinks, coffee, tea, and tips.",
+        "Horse ride/cab to Zojila & Zero Point.",
+        "Anything not specified in inclusions."
+      ],
       "price": 35000
     }
   ],
@@ -260,7 +709,10 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
-      ],      "description": "An adrenaline-filled trip through the mountains of Ladakh.",
+      ],
+      "days": 6,
+      "night": 5,
+      "description": "An adrenaline-filled trip through the mountains of Ladakh.",
       "detailedDescription": "Embark on an adventurous journey through Ladakh’s rugged terrain. Experience thrilling activities like trekking, mountain biking, and exploring remote regions.",
       "itinerary": [
         "Day 1: Arrive in Leh, transfer to hotel.",
@@ -288,7 +740,10 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
-      ],      "description": "A thrilling ride through the rugged terrains of Ladakh.",
+      ],
+      "days": 6,
+      "night": 5,
+      "description": "A thrilling ride through the rugged terrains of Ladakh.",
       "detailedDescription": "Join a motorcycle tour through Ladakh’s stunning and challenging roads. Feel the thrill as you ride through high-altitude passes and explore mesmerizing landscapes.",
       "itinerary": [
         "Day 1: Arrive in Leh, meet the group and briefing.",
@@ -316,7 +771,10 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
-      ],      "description": "Immerse yourself in the rich heritage and traditions of Ladakh.",
+      ],
+      "days": 6,
+      "night": 5,
+      "description": "Immerse yourself in the rich heritage and traditions of Ladakh.",
       "detailedDescription": "This cultural tour offers an opportunity to explore the traditions, history, and art of Ladakh. Visit ancient monasteries, palaces, and experience local culture.",
       "itinerary": [
         "Day 1: Arrival in Leh, visit Shanti Stupa.",
@@ -340,7 +798,10 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
-      ],      "description": "Walk over the frozen Zanskar River on this unforgettable trek.",
+      ],
+      "days": 6,
+      "night": 5,
+      "description": "Walk over the frozen Zanskar River on this unforgettable trek.",
       "detailedDescription": "Trek over the frozen Zanskar River, one of the most unique and thrilling experiences in Ladakh. The trek takes you through stunning icy landscapes and remote villages.",
       "itinerary": [
         "Day 1: Arrival in Leh, acclimatization.",
@@ -368,7 +829,10 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
-      ],      "description": "Enjoy a peaceful retreat in the breathtaking landscapes of Ladakh.",
+      ],
+      "days": 6,
+      "night": 5,
+      "description": "Enjoy a peaceful retreat in the breathtaking landscapes of Ladakh.",
       "detailedDescription": "A serene retreat in the heart of Ladakh, this tour offers you a chance to unwind amidst breathtaking mountain views, lakes, and peaceful monasteries.",
       "itinerary": [
         "Day 1: Arrive in Leh, relax and enjoy the serene surroundings.",

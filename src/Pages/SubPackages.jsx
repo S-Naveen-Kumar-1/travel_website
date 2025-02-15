@@ -7,37 +7,47 @@ import Footer from "../components/Footer";
 const packages = {
   kashmir: [
     {
-      id: "kashmir-paradise-tour",
-      name: "Kashmir Paradise Tour",
+      id: "the-nomads-quest",
+      name: "The Nomads Quest (nirvana)",
+      days: 9,
+      night: 8,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfw78Ij9h_fLWmsw2Csp3e-YuaTO2dytoOIw&s",
       description: "Experience the beauty of the valleys and lakes of Kashmir.",
     },
     {
-      id: "kashmir-adventure-trek",
-      name: "Kashmir Adventure Trek",
+      id: "green-escape",
+      name: "Green Escape",
+      days: 5,
+      night: 4,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjFzcLa3pjlUioZve0jUE7jzhpj8pblhm9xQ&s",
       description:
         "Enjoy thrilling treks in the stunning landscapes of Kashmir.",
     },
     {
-      id: "romantic-kashmir-getaway",
-      name: "Romantic Kashmir Getaway",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTu6Ozy9TQwNeQ_kfsVQ-23-u373eY-ShRIA&s",
-      description: "Perfect for couples looking for a scenic retreat.",
-    },
-    {
-      id: "winter-wonderland",
-      name: "Winter Wonderland",
+      id: "winter-twilight-kashmir",
+      name: "Winter Twilight Kashmir",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdoKm0cmhMFLMN7o44d9h-dykRW3VoaoXYcg&s",
       description: "Explore Kashmir in winter with snow-covered beauty.",
     },
     {
-      id: "kashmir-cultural-tour",
-      name: "Kashmir Cultural Tour",
+      id: "honeymoon-special",
+      name: "Honeymoon Special",
+      days: 6,
+      night: 5,
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTu6Ozy9TQwNeQ_kfsVQ-23-u373eY-ShRIA&s",
+      description: "Perfect for couples looking for a scenic retreat.",
+    },
+    {
+      id: "thrill-trek-escape",
+      name: "Thrill Trek Escape",
+      days: 8,
+      night: 7,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSznmN2O5cre6gkzHH5BU2XLxi0N4WVCWjYUQ&s",
       description: "Discover the rich traditions and culture of Kashmir.",
@@ -47,6 +57,8 @@ const packages = {
     {
       id: "vaishno-devi-yatra",
       name: "Vaishno Devi Yatra",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDTDrysXTivln1ZbF6x8sIaZbFzhpPaYYOdw&s",
       description: "A spiritual journey to the sacred shrine of Vaishno Devi.",
@@ -54,6 +66,8 @@ const packages = {
     {
       id: "jammu-heritage-tour",
       name: "Jammu Heritage Tour",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl6p2jDPuUzSu4nN-iYXX2dVYE0VI1qJPh_w&s",
       description: "Explore the historical and cultural landmarks of Jammu.",
@@ -61,6 +75,8 @@ const packages = {
     {
       id: "adventure-in-patnitop",
       name: "Adventure in Patnitop",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_DnAxBrCH3yVuvtovrsbTTT705-cUKPx4zQ&s",
       description: "Thrilling adventures in the scenic hills of Patnitop.",
@@ -68,6 +84,8 @@ const packages = {
     {
       id: "jammu-wildlife-safari",
       name: "Jammu Wildlife Safari",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdTRHC9ATA0dNaLxZwj5pPAZcyFYHZ97LFA&s",
       description: "Discover the wildlife and natural beauty of Jammu.",
@@ -75,6 +93,8 @@ const packages = {
     {
       id: "jammu-food-culture-tour",
       name: "Jammu Food and Culture Tour",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZ85plN0jPWC9aHD0pIl5_4r0Q6h0aBeOsw&s",
       description: "Experience the flavors and traditions of Jammu.",
@@ -84,6 +104,8 @@ const packages = {
     {
       id: "ladakh-adventure-expedition",
       name: "Ladakh Adventure Expedition",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKhJyrjph0JEfRLj_U1l7T0e_k20ISqbpi-g&s",
       description: "An adrenaline-filled trip through the mountains of Ladakh.",
@@ -91,6 +113,8 @@ const packages = {
     {
       id: "ladakh-motorcycle-tour",
       name: "Ladakh Motorcycle Tour",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmwu0-mW0zyevnecu0MMIp-Y7XZwokQi1_qw&s",
       description: "A thrilling ride through the rugged terrains of Ladakh.",
@@ -98,6 +122,8 @@ const packages = {
     {
       id: "leh-ladakh-cultural-tour",
       name: "Leh-Ladakh Cultural Tour",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjAs-iXXnX3KYSWqvCl8hVIjqjA6ztDQFtMQ&s",
       description:
@@ -106,6 +132,8 @@ const packages = {
     {
       id: "frozen-river-trek",
       name: "Frozen River Trek",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjvG_Wq6wjYg-hCQeVeTtQ-d45WjyzUlSTVA&s",
       description:
@@ -114,6 +142,8 @@ const packages = {
     {
       id: "ladakh-scenic-retreat",
       name: "Ladakh Scenic Retreat",
+      days: 6,
+      night: 5,
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6nBkLhFVZWNp-rpimnVwmVLrxgFePJkKVOg&s",
       description:

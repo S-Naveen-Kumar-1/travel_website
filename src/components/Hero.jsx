@@ -12,7 +12,7 @@ const Hero = () => {
     >
       <section className="lg:h-full flex flex-col justify-center items-center text-center p-8 z-10">
         <div className="max-w-4xl w-full mb-12 text-center sm:mb-20 xs:mb-24">
-          <h1 className="text-4xl  font-bold mb-4 sm:text-3xl text-orange-500">
+          <h1 className="text-4xl  font-bold mb-4 sm:text-3xl text-white">
             Explore the Beauty of Kashmir
           </h1>
           {/* <p className="text-xl mb-8 sm:text-lg sm:mb-12 xs:text-base xs:mb-16 text-gray-800 ">
