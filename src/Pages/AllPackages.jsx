@@ -56,51 +56,47 @@ const packages = {
   ],
   jammu: [
     {
-      id: "vaishno-devi-yatra",
-      name: "Vaishno Devi Yatra",
+      id: "jammu-spiritual-journey",
+      name: "Jammu Spiritual Journey",
       days: 6,
       night: 5,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDTDrysXTivln1ZbF6x8sIaZbFzhpPaYYOdw&s",
-      description: "A spiritual journey to the sacred shrine of Vaishno Devi.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDTDrysXTivln1ZbF6x8sIaZbFzhpPaYYOdw&s",
+      description: "A divine pilgrimage to Vaishno Devi and other sacred sites in Jammu."
     },
     {
-      id: "jammu-heritage-tour",
-      name: "Jammu Heritage Tour",
+      id: "jammu-nature-retreat",
+      name: "Jammu Nature Retreat",
       days: 6,
       night: 5,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl6p2jDPuUzSu4nN-iYXX2dVYE0VI1qJPh_w&s",
-      description: "Explore the historical and cultural landmarks of Jammu.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl6p2jDPuUzSu4nN-iYXX2dVYE0VI1qJPh_w&s",
+      description: "Immerse yourself in the lush greenery and serene landscapes of Jammu."
     },
     {
-      id: "adventure-in-patnitop",
-      name: "Adventure in Patnitop",
+      id: "jammu-historic-tour",
+      name: "Jammu Historic Tour",
       days: 6,
       night: 5,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_DnAxBrCH3yVuvtovrsbTTT705-cUKPx4zQ&s",
-      description: "Thrilling adventures in the scenic hills of Patnitop.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_DnAxBrCH3yVuvtovrsbTTT705-cUKPx4zQ&s",
+      description: "Step back in time with visits to forts, palaces, and historical landmarks."
     },
     {
-      id: "jammu-wildlife-safari",
-      name: "Jammu Wildlife Safari",
+      id: "jammu-wildlife-expedition",
+      name: "Jammu Wildlife Expedition",
       days: 6,
       night: 5,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdTRHC9ATA0dNaLxZwj5pPAZcyFYHZ97LFA&s",
-      description: "Discover the wildlife and natural beauty of Jammu.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdTRHC9ATA0dNaLxZwj5pPAZcyFYHZ97LFA&s",
+      description: "Explore Jammu’s wildlife sanctuaries and encounter exotic flora and fauna."
     },
     {
-      id: "jammu-food-culture-tour",
-      name: "Jammu Food and Culture Tour",
+      id: "jammu-adventure-escapade",
+      name: "Jammu Adventure Escapade",
       days: 6,
       night: 5,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZ85plN0jPWC9aHD0pIl5_4r0Q6h0aBeOsw&s",
-      description: "Experience the flavors and traditions of Jammu.",
-    },
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZ85plN0jPWC9aHD0pIl5_4r0Q6h0aBeOsw&s",
+      description: "Experience the thrill of trekking, paragliding, and river rafting in Jammu."
+    }
   ],
+
   ladakh: [
     {
       id: "ladakh-adventure-expedition",

@@ -77,7 +77,7 @@
         "Stay and food in Srinagar before/after the trek.",
         "Personal backpack carrying during the trek."
       ],
-      "price": 25000
+      "price": 30000
     },
     {
       "id": "green-escape",
@@ -361,346 +361,122 @@
   ],
   "jammu": [
     {
-      "id": "vaishno-devi-yatra",
-      "name": "Vaishno Devi Yatra",
+      "id": "jammu-spiritual-journey",
+      "name": "Jammu Spiritual Journey",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
-      "days": 6,
-      "night": 5,
-      "description": "A spiritual journey to the sacred shrine of Vaishno Devi.",
-      "detailedDescription": "A spiritually enriching pilgrimage to the Vaishno Devi Temple located on the Trikuta Mountains.",
+      "days": 5,
+      "nights": 4,
+      "description": "Explore the divine temples and spiritual sites of Jammu.",
+      "detailedDescription": "Visit sacred temples, seek blessings, and immerse yourself in the spiritual aura of Jammu’s renowned religious sites.",
       "itinerary": [
-        {
-          "day": 1,
-          "title": "Arrival in Srinagar & Sightseeing",
-          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
-          "icon": "🚖"
-        },
-        {
-          "day": 2,
-          "title": "Gulmarg Adventure",
-          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
-          "icon": "⛷️"
-        },
-        {
-          "day": 3,
-          "title": "Pahalgam - The Valley of Shepherds",
-          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
-          "icon": "🏔️"
-        },
-        {
-          "day": 4,
-          "title": "Aru, Betaab Valley & Chandanwari",
-          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
-          "icon": "🌲"
-        },
-        {
-          "day": 5,
-          "title": "Doodhpathri - The Valley of Milk",
-          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
-          "icon": "🌿"
-        },
-        {
-          "day": 6,
-          "title": "Departure from Srinagar",
-          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
-          "icon": "✈️"
-        }
+        { "day": 1, "title": "Arrival & Local Exploration", "description": "Arrive in Jammu and visit Ranbireshwar Temple and Raghunath Temple.", "icon": "🛬" },
+        { "day": 2, "title": "Vaishno Devi Pilgrimage", "description": "Begin the trek to the holy shrine of Mata Vaishno Devi.", "icon": "🛕" },
+        { "day": 3, "title": "Shiv Khori Cave Temple", "description": "Explore the mystical Shiv Khori cave temple.", "icon": "🌄" },
+        { "day": 4, "title": "Akhnoor Fort & Bahu Fort", "description": "Visit historic forts and enjoy the scenic views.", "icon": "🏰" },
+        { "day": 5, "title": "Departure", "description": "Explore local markets before heading home.", "icon": "✈️" }
       ],
-      "inclusions": [
-        "Meet & Greet Assistance on arrival.",
-        "05 Night’s accommodation in 3-star hotels.",
-        "Meal plan MAP (Breakfast & Dinner).",
-        "Welcome drink on arrival at hotels/houseboat.",
-        "Local cab for Aru, Betaab Valley & Chandanwari.",
-        "All transfers and sightseeing by AC/Non-AC cab.",
-        "All applicable taxes and charges, parking fees, driver wages."
-      ],
-      "exclusions": [
-        "Any kind of airfare.",
-        "Entrance fees for gardens and monuments.",
-        "Lunch, drinks, coffee, tea, and tips.",
-        "Horse ride/cab to Zojila & Zero Point.",
-        "Anything not specified in inclusions."
-      ],
-      "price": 35000
+      "inclusions": ["Accommodation", "Meals", "Transportation", "Temple visits"],
+      "exclusions": ["Personal expenses", "Helicopter tickets for Vaishno Devi", "Meals outside itinerary"],
+      "price": 25000
     },
     {
-      "id": "jammu-heritage-tour",
-      "name": "Jammu Heritage Tour",
+      "id": "jammu-nature-retreat",
+      "name": "Jammu Nature Retreat",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
-      "days": 6,
-      "night": 5,
-      "description": "Explore the historical and cultural landmarks of Jammu.",
-      "detailedDescription": "An in-depth tour of Jammu’s ancient temples, forts, and historical monuments.",
+      "days": 4,
+      "nights": 3,
+      "description": "A relaxing getaway amidst Jammu’s natural beauty.",
+      "detailedDescription": "Enjoy scenic views, serene lakes, and lush green meadows while experiencing the peaceful side of Jammu.",
       "itinerary": [
-        {
-          "day": 1,
-          "title": "Arrival in Srinagar & Sightseeing",
-          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
-          "icon": "🚖"
-        },
-        {
-          "day": 2,
-          "title": "Gulmarg Adventure",
-          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
-          "icon": "⛷️"
-        },
-        {
-          "day": 3,
-          "title": "Pahalgam - The Valley of Shepherds",
-          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
-          "icon": "🏔️"
-        },
-        {
-          "day": 4,
-          "title": "Aru, Betaab Valley & Chandanwari",
-          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
-          "icon": "🌲"
-        },
-        {
-          "day": 5,
-          "title": "Doodhpathri - The Valley of Milk",
-          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
-          "icon": "🌿"
-        },
-        {
-          "day": 6,
-          "title": "Departure from Srinagar",
-          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
-          "icon": "✈️"
-        }
+        { "day": 1, "title": "Arrival & Patnitop Visit", "description": "Arrive in Jammu and drive to Patnitop for a scenic retreat.", "icon": "🌿" },
+        { "day": 2, "title": "Nathatop & Sanasar Lake", "description": "Explore Nathatop’s stunning views and visit Sanasar Lake.", "icon": "🏞️" },
+        { "day": 3, "title": "Mansar & Surinsar Lakes", "description": "Visit the beautiful twin lakes surrounded by forests.", "icon": "🌊" },
+        { "day": 4, "title": "Departure", "description": "Enjoy a morning nature walk before heading back.", "icon": "✈️" }
       ],
-      "inclusions": [
-        "Meet & Greet Assistance on arrival.",
-        "05 Night’s accommodation in 3-star hotels.",
-        "Meal plan MAP (Breakfast & Dinner).",
-        "Welcome drink on arrival at hotels/houseboat.",
-        "Local cab for Aru, Betaab Valley & Chandanwari.",
-        "All transfers and sightseeing by AC/Non-AC cab.",
-        "All applicable taxes and charges, parking fees, driver wages."
-      ],
-      "exclusions": [
-        "Any kind of airfare.",
-        "Entrance fees for gardens and monuments.",
-        "Lunch, drinks, coffee, tea, and tips.",
-        "Horse ride/cab to Zojila & Zero Point.",
-        "Anything not specified in inclusions."
-      ],
-      "price": 35000
+      "inclusions": ["Accommodation", "Meals", "Transportation", "Sightseeing"],
+      "exclusions": ["Personal expenses", "Adventure activities"],
+      "price": 22000
     },
     {
-      "id": "adventure-in-patnitop",
-      "name": "Adventure in Patnitop",
+      "id": "jammu-historic-tour",
+      "name": "Jammu Historic Tour",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
-      "days": 6,
-      "night": 5,
-      "description": "Thrilling adventures in the scenic hills of Patnitop.",
-      "detailedDescription": "Engage in various adventure activities like trekking, paragliding, and skiing in the hills of Patnitop.",
+      "days": 5,
+      "nights": 4,
+      "description": "Discover the rich history and heritage of Jammu.",
+      "detailedDescription": "Step back in time with visits to forts, palaces, and historical landmarks in Jammu.",
       "itinerary": [
-        {
-          "day": 1,
-          "title": "Arrival in Srinagar & Sightseeing",
-          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
-          "icon": "🚖"
-        },
-        {
-          "day": 2,
-          "title": "Gulmarg Adventure",
-          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
-          "icon": "⛷️"
-        },
-        {
-          "day": 3,
-          "title": "Pahalgam - The Valley of Shepherds",
-          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
-          "icon": "🏔️"
-        },
-        {
-          "day": 4,
-          "title": "Aru, Betaab Valley & Chandanwari",
-          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
-          "icon": "🌲"
-        },
-        {
-          "day": 5,
-          "title": "Doodhpathri - The Valley of Milk",
-          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
-          "icon": "🌿"
-        },
-        {
-          "day": 6,
-          "title": "Departure from Srinagar",
-          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
-          "icon": "✈️"
-        }
+        { "day": 1, "title": "Arrival & Heritage Walk", "description": "Arrive in Jammu and explore its historic streets and temples.", "icon": "🏛️" },
+        { "day": 2, "title": "Bahu Fort & Amar Mahal", "description": "Visit Bahu Fort, Bagh-e-Bahu Garden, and Amar Mahal Palace.", "icon": "🏯" },
+        { "day": 3, "title": "Mubarak Mandi Palace", "description": "Explore the stunning architecture of Mubarak Mandi Palace.", "icon": "🏰" },
+        { "day": 4, "title": "Siar Baba Waterfall & Temple Visit", "description": "Relax near the Siar Baba Waterfall and visit a nearby temple.", "icon": "🌊" },
+        { "day": 5, "title": "Departure", "description": "A relaxed morning before heading back home.", "icon": "✈️" }
       ],
-      "inclusions": [
-        "Meet & Greet Assistance on arrival.",
-        "05 Night’s accommodation in 3-star hotels.",
-        "Meal plan MAP (Breakfast & Dinner).",
-        "Welcome drink on arrival at hotels/houseboat.",
-        "Local cab for Aru, Betaab Valley & Chandanwari.",
-        "All transfers and sightseeing by AC/Non-AC cab.",
-        "All applicable taxes and charges, parking fees, driver wages."
-      ],
-      "exclusions": [
-        "Any kind of airfare.",
-        "Entrance fees for gardens and monuments.",
-        "Lunch, drinks, coffee, tea, and tips.",
-        "Horse ride/cab to Zojila & Zero Point.",
-        "Anything not specified in inclusions."
-      ],
-      "price": 35000
+      "inclusions": ["Accommodation", "Meals", "Guided Tours", "Transportation"],
+      "exclusions": ["Personal expenses", "Entry tickets"],
+      "price": 27000
     },
     {
-      "id": "jammu-wildlife-safari",
-      "name": "Jammu Wildlife Safari",
+      "id": "jammu-wildlife-expedition",
+      "name": "Jammu Wildlife Expedition",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
-      "days": 6,
-      "night": 5,
-      "description": "Discover the wildlife and natural beauty of Jammu.",
-      "detailedDescription": "A safari through Jammu’s rich wildlife reserves, perfect for nature lovers and photographers.",
+      "days": 4,
+      "nights": 3,
+      "description": "A thrilling wildlife exploration in Jammu’s forests.",
+      "detailedDescription": "Visit some of the best wildlife sanctuaries and national parks in Jammu to witness exotic flora and fauna.",
       "itinerary": [
-        {
-          "day": 1,
-          "title": "Arrival in Srinagar & Sightseeing",
-          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
-          "icon": "🚖"
-        },
-        {
-          "day": 2,
-          "title": "Gulmarg Adventure",
-          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
-          "icon": "⛷️"
-        },
-        {
-          "day": 3,
-          "title": "Pahalgam - The Valley of Shepherds",
-          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
-          "icon": "🏔️"
-        },
-        {
-          "day": 4,
-          "title": "Aru, Betaab Valley & Chandanwari",
-          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
-          "icon": "🌲"
-        },
-        {
-          "day": 5,
-          "title": "Doodhpathri - The Valley of Milk",
-          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
-          "icon": "🌿"
-        },
-        {
-          "day": 6,
-          "title": "Departure from Srinagar",
-          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
-          "icon": "✈️"
-        }
+        { "day": 1, "title": "Arrival & Jasrota Wildlife Sanctuary", "description": "Arrive in Jammu and visit Jasrota Wildlife Sanctuary.", "icon": "🐅" },
+        { "day": 2, "title": "Mansar Lake & Bird Watching", "description": "Explore the beautiful Mansar Lake and spot migratory birds.", "icon": "🦜" },
+        { "day": 3, "title": "Nandini Wildlife Sanctuary", "description": "A jungle safari in Nandini Wildlife Sanctuary.", "icon": "🌲" },
+        { "day": 4, "title": "Departure", "description": "Enjoy a final morning nature walk before leaving.", "icon": "✈️" }
       ],
-      "inclusions": [
-        "Meet & Greet Assistance on arrival.",
-        "05 Night’s accommodation in 3-star hotels.",
-        "Meal plan MAP (Breakfast & Dinner).",
-        "Welcome drink on arrival at hotels/houseboat.",
-        "Local cab for Aru, Betaab Valley & Chandanwari.",
-        "All transfers and sightseeing by AC/Non-AC cab.",
-        "All applicable taxes and charges, parking fees, driver wages."
-      ],
-      "exclusions": [
-        "Any kind of airfare.",
-        "Entrance fees for gardens and monuments.",
-        "Lunch, drinks, coffee, tea, and tips.",
-        "Horse ride/cab to Zojila & Zero Point.",
-        "Anything not specified in inclusions."
-      ],
-      "price": 35000
+      "inclusions": ["Accommodation", "Meals", "Safari permits", "Transportation"],
+      "exclusions": ["Personal expenses", "Adventure activities"],
+      "price": 26000
     },
     {
-      "id": "jammu-food-culture-tour",
-      "name": "Jammu Food and Culture Tour",
+      "id": "jammu-adventure-escapade",
+      "name": "Jammu Adventure Escapade",
       "images": [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
       "days": 6,
-      "night": 5,
-      "description": "Experience the flavors and traditions of Jammu.",
-      "detailedDescription": "A tour focused on the rich food culture of Jammu, including visits to local markets and restaurants.",
+      "nights": 5,
+      "description": "Experience the thrill of adventure sports in Jammu.",
+      "detailedDescription": "An action-packed trip with trekking, paragliding, and river rafting in Jammu’s most exciting locations.",
       "itinerary": [
-        {
-          "day": 1,
-          "title": "Arrival in Srinagar & Sightseeing",
-          "description": "Arrive at Srinagar Airport, transfer to the hotel, and check-in. Visit Mughal Gardens, Shankaracharya Temple, and take a Shikara ride on Dal Lake.",
-          "icon": "🚖"
-        },
-        {
-          "day": 2,
-          "title": "Gulmarg Adventure",
-          "description": "Drive to Gulmarg, enjoy the Gondola ride, skiing, and snow activities at Affarwat Peak. Overnight stay in Gulmarg.",
-          "icon": "⛷️"
-        },
-        {
-          "day": 3,
-          "title": "Pahalgam - The Valley of Shepherds",
-          "description": "Travel to Pahalgam via Saffron Fields & Apple Valley. Explore the local market, take a pony ride to Baisaran, and enjoy breathtaking landscapes.",
-          "icon": "🏔️"
-        },
-        {
-          "day": 4,
-          "title": "Aru, Betaab Valley & Chandanwari",
-          "description": "Visit Aru Valley, Betaab Valley, and Chandanwari for mesmerizing views and snow-filled adventures.",
-          "icon": "🌲"
-        },
-        {
-          "day": 5,
-          "title": "Doodhpathri - The Valley of Milk",
-          "description": "Explore Doodhpathri, a hidden gem with lush green meadows and scenic beauty. Return to Srinagar for an overnight stay.",
-          "icon": "🌿"
-        },
-        {
-          "day": 6,
-          "title": "Departure from Srinagar",
-          "description": "Enjoy a leisurely breakfast and transfer to Srinagar Airport for departure with beautiful memories.",
-          "icon": "✈️"
-        }
+        { "day": 1, "title": "Arrival & Adventure Briefing", "description": "Arrive in Jammu and prepare for an adventure-filled trip.", "icon": "🛬" },
+        { "day": 2, "title": "Trekking in Sanasar", "description": "Trek through the scenic Sanasar hills.", "icon": "🥾" },
+        { "day": 3, "title": "Paragliding at Nathatop", "description": "Experience the thrill of flying over the hills of Nathatop.", "icon": "🪂" },
+        { "day": 4, "title": "River Rafting in Chenab", "description": "Enjoy a high-adrenaline rafting experience.", "icon": "🌊" },
+        { "day": 5, "title": "Camping & Bonfire", "description": "Relax with a night of camping and bonfire in Patnitop.", "icon": "🔥" },
+        { "day": 6, "title": "Departure", "description": "Head back home after an exhilarating trip.", "icon": "✈️" }
       ],
-      "inclusions": [
-        "Meet & Greet Assistance on arrival.",
-        "05 Night’s accommodation in 3-star hotels.",
-        "Meal plan MAP (Breakfast & Dinner).",
-        "Welcome drink on arrival at hotels/houseboat.",
-        "Local cab for Aru, Betaab Valley & Chandanwari.",
-        "All transfers and sightseeing by AC/Non-AC cab.",
-        "All applicable taxes and charges, parking fees, driver wages."
-      ],
-      "exclusions": [
-        "Any kind of airfare.",
-        "Entrance fees for gardens and monuments.",
-        "Lunch, drinks, coffee, tea, and tips.",
-        "Horse ride/cab to Zojila & Zero Point.",
-        "Anything not specified in inclusions."
-      ],
-      "price": 35000
+      "inclusions": ["Accommodation", "Meals", "Adventure activities", "Transportation"],
+      "exclusions": ["Personal expenses", "Insurance"],
+      "price": 30000
     }
-  ],
+  ]
+  
+  ,
   "ladakh": [
     {
       "id": "ladakh-adventure-expedition",
@@ -711,26 +487,19 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
       "days": 6,
-      "night": 5,
+      "nights": 5,
       "description": "An adrenaline-filled trip through the mountains of Ladakh.",
       "detailedDescription": "Embark on an adventurous journey through Ladakh’s rugged terrain. Experience thrilling activities like trekking, mountain biking, and exploring remote regions.",
       "itinerary": [
-        "Day 1: Arrive in Leh, transfer to hotel.",
-        "Day 2: Explore Pangong Lake, experience the landscapes.",
-        "Day 3: Trek through Nubra Valley.",
-        "Day 4: Return to Leh, sightseeing in Leh Market and Leh Palace."
+        { "day": 1, "title": "Arrival & Acclimatization", "description": "Arrive in Leh, rest to adjust to high altitude, and explore the local market.", "icon": "🛬" },
+        { "day": 2, "title": "Drive to Pangong Lake", "description": "Travel to Pangong Lake, enjoy stunning views, and spend the night by the lake.", "icon": "🏞️" },
+        { "day": 3, "title": "Trek to Nubra Valley", "description": "Begin your trek from Pangong to Nubra Valley, crossing beautiful landscapes.", "icon": "🥾" },
+        { "day": 4, "title": "Explore Diskit & Hunder", "description": "Visit Diskit Monastery, Hunder Sand Dunes, and enjoy a camel ride.", "icon": "🏜️" },
+        { "day": 5, "title": "Return to Leh", "description": "Drive back to Leh, visit Magnetic Hill, Hall of Fame, and local attractions.", "icon": "🛣️" },
+        { "day": 6, "title": "Departure", "description": "Check out from Leh and head back home with unforgettable memories.", "icon": "✈️" }
       ],
-      "inclusions": [
-        "Accommodation in hotels and tents.",
-        "Meals (Breakfast, Dinner).",
-        "Trekking and adventure permits.",
-        "Transportation during the trip."
-      ],
-      "exclusions": [
-        "Personal expenses.",
-        "Meals outside the itinerary.",
-        "Adventure gear (if needed)."
-      ],
+      "inclusions": ["Accommodation", "Meals", "Trekking permits", "Transportation"],
+      "exclusions": ["Personal expenses", "Meals outside itinerary", "Adventure gear"],
       "price": 35000
     },
     {
@@ -742,27 +511,20 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
       "days": 6,
-      "night": 5,
+      "nights": 5,
       "description": "A thrilling ride through the rugged terrains of Ladakh.",
-      "detailedDescription": "Join a motorcycle tour through Ladakh’s stunning and challenging roads. Feel the thrill as you ride through high-altitude passes and explore mesmerizing landscapes.",
+      "detailedDescription": "Join a motorcycle tour through Ladakh’s stunning and challenging roads.",
       "itinerary": [
-        "Day 1: Arrive in Leh, meet the group and briefing.",
-        "Day 2: Ride to Pangong Lake.",
-        "Day 3: Ride to Nubra Valley, visit Diskit Monastery.",
-        "Day 4: Return to Leh via Khardung La."
+        { "day": 1, "title": "Arrival & Bike Check", "description": "Arrive in Leh, meet the group, and get your bikes ready.", "icon": "🏍️" },
+        { "day": 2, "title": "Ride to Pangong Lake", "description": "Begin the thrilling ride to the breathtaking Pangong Lake.", "icon": "🏞️" },
+        { "day": 3, "title": "Ride to Nubra Valley", "description": "Travel through Khardung La Pass and explore the sand dunes of Nubra.", "icon": "🏜️" },
+        { "day": 4, "title": "Visit Diskit Monastery & Return to Leh", "description": "Explore Diskit Monastery, then ride back to Leh.", "icon": "🏯" },
+        { "day": 5, "title": "Magnetic Hill & Hall of Fame", "description": "Experience Magnetic Hill and visit the Hall of Fame Museum.", "icon": "🏁" },
+        { "day": 6, "title": "Departure", "description": "Final ride through Leh before departure.", "icon": "✈️" }
       ],
-      "inclusions": [
-        "Motorcycle rental and fuel.",
-        "Accommodation in hotels and camps.",
-        "Meals (Breakfast, Dinner).",
-        "Support vehicle for luggage."
-      ],
-      "exclusions": [
-        "Personal expenses.",
-        "Motorcycle insurance.",
-        "Meals outside the itinerary."
-      ],
-      "price": 25000
+      "inclusions": ["Bike rental", "Accommodation", "Meals", "Support vehicle"],
+      "exclusions": ["Personal expenses", "Bike insurance", "Meals outside itinerary"],
+      "price": 35000
     },
     {
       "id": "leh-ladakh-cultural-tour",
@@ -773,22 +535,17 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
       "days": 6,
-      "night": 5,
+      "nights": 5,
       "description": "Immerse yourself in the rich heritage and traditions of Ladakh.",
-      "detailedDescription": "This cultural tour offers an opportunity to explore the traditions, history, and art of Ladakh. Visit ancient monasteries, palaces, and experience local culture.",
+      "detailedDescription": "Explore Ladakh’s history, visit monasteries, and experience local culture.",
       "itinerary": [
-        "Day 1: Arrival in Leh, visit Shanti Stupa.",
-        "Day 2: Explore Hemis Monastery and Thiksey Monastery.",
-        "Day 3: Visit Leh Palace and Leh Market.",
-        "Day 4: Visit Stok Palace and depart from Leh."
+        { "day": 1, "title": "Arrival & Sightseeing", "description": "Arrive in Leh and visit Shanti Stupa.", "icon": "🏯" },
+        { "day": 2, "title": "Monastery Tour", "description": "Explore Hemis Monastery and Thiksey Monastery.", "icon": "🛕" },
+        { "day": 3, "title": "Leh Palace & Market", "description": "Visit Leh Palace and shop at Leh Market.", "icon": "🏰" },
+        { "day": 4, "title": "Stok Palace & Departure", "description": "Explore Stok Palace and prepare for departure.", "icon": "🏡" }
       ],
-      "inclusions": [
-        "Accommodation in hotels.",
-        "Meals (Breakfast, Dinner).",
-        "Cultural and sightseeing tours.",
-        "Local guide."
-      ],
-      "exclusions": ["Personal expenses.", "Meals outside the itinerary."],
+      "inclusions": ["Accommodation", "Meals", "Cultural tours", "Local guide"],
+      "exclusions": ["Personal expenses", "Meals outside itinerary"],
       "price": 35000
     },
     {
@@ -800,27 +557,18 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
       "days": 6,
-      "night": 5,
+      "nights": 5,
       "description": "Walk over the frozen Zanskar River on this unforgettable trek.",
-      "detailedDescription": "Trek over the frozen Zanskar River, one of the most unique and thrilling experiences in Ladakh. The trek takes you through stunning icy landscapes and remote villages.",
+      "detailedDescription": "Trek through stunning icy landscapes and remote villages.",
       "itinerary": [
-        "Day 1: Arrival in Leh, acclimatization.",
-        "Day 2: Transfer to Chilling and start the trek.",
-        "Day 3: Trek through the frozen river to Lingshed.",
-        "Day 4: Return trek and drive back to Leh."
+        { "day": 1, "title": "Arrival & Acclimatization", "description": "Arrive in Leh and prepare for the trek.", "icon": "🛬" },
+        { "day": 2, "title": "Trek Begins", "description": "Start your trek from Chilling over the frozen river.", "icon": "🥾" },
+        { "day": 3, "title": "Trek to Lingshed", "description": "Journey deeper into the icy landscape.", "icon": "❄️" },
+        { "day": 4, "title": "Return Trek", "description": "Retrace your steps and head back to Leh.", "icon": "🏔️" }
       ],
-      "inclusions": [
-        "Accommodation in tents and guesthouses.",
-        "Meals (Breakfast, Lunch, Dinner).",
-        "Trekking permits and guide.",
-        "Transportation for the trek."
-      ],
-      "exclusions": [
-        "Personal expenses.",
-        "Trekking gear.",
-        "Meals outside the itinerary."
-      ],
-      "price": 25000
+      "inclusions": ["Accommodation", "Meals", "Trekking permits", "Guide"],
+      "exclusions": ["Personal expenses", "Trekking gear", "Meals outside itinerary"],
+      "price": 30000
     },
     {
       "id": "ladakh-scenic-retreat",
@@ -831,23 +579,20 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
       "days": 6,
-      "night": 5,
+      "nights": 5,
       "description": "Enjoy a peaceful retreat in the breathtaking landscapes of Ladakh.",
-      "detailedDescription": "A serene retreat in the heart of Ladakh, this tour offers you a chance to unwind amidst breathtaking mountain views, lakes, and peaceful monasteries.",
+      "detailedDescription": "Unwind amidst breathtaking mountain views, lakes, and peaceful monasteries.",
       "itinerary": [
-        "Day 1: Arrive in Leh, relax and enjoy the serene surroundings.",
-        "Day 2: Visit Pangong Lake and relax by the lakeside.",
-        "Day 3: Explore the Nubra Valley and relax in its serene landscapes.",
-        "Day 4: Return to Leh for departure."
+        { "day": 1, "title": "Arrival & Relaxation", "description": "Arrive in Leh and soak in the serene beauty.", "icon": "🌄" },
+        { "day": 2, "title": "Pangong Lake Visit", "description": "Relax by the lakeside and enjoy the scenic views.", "icon": "🏞️" },
+        { "day": 3, "title": "Nubra Valley Exploration", "description": "Explore the valley and its peaceful landscapes.", "icon": "🏜️" },
+        { "day": 4, "title": "Return to Leh & Sightseeing", "description": "Drive back to Leh and visit local attractions.", "icon": "🚙" }
       ],
-      "inclusions": [
-        "Accommodation in hotels and resorts.",
-        "Meals (Breakfast, Dinner).",
-        "Sightseeing as per itinerary.",
-        "Transportation for the retreat."
-      ],
-      "exclusions": ["Personal expenses.", "Meals outside the itinerary."],
-      "price": 28000
+      "inclusions": ["Accommodation", "Meals", "Sightseeing", "Transportation"],
+      "exclusions": ["Personal expenses", "Meals outside itinerary"],
+      "price": 30000
     }
   ]
+  
+  
 }
