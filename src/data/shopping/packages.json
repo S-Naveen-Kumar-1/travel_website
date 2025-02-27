@@ -90,9 +90,9 @@
       "id": "green-escape",
       "name": "Green Escape",
       "images": [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KTygrQwPrZgmD3Xd4tj-hk4SR2Ymwdhh7w&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD7lkNc_L57bYo7pYgv2AItv2-helrce4aZg&s",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfngGKFkItMJDq3-7xInb6HiyKlnv_oMaNw&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkWWZ6O6DVYne3kOtrWswtw4CdES_YYidIWQ&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYe7iOXQsa8scgRLDOUqyH4ALhkqMc1sFjnA&s"
       ],
       "days": 5,
       "night": 4,
@@ -294,57 +294,57 @@
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLl0CwdiA8_GJhLG4yYGFOUbG_Yd_9TB7WIQ&s"
       ],
       "description": "Discover the rich traditions and culture of Kashmir.",
-      "detailedDescription": "A cultural tour through Kashmir to experience its vibrant history, traditional art, and craftsmanship.",
+      "detailedDescription": "A thrilling trek through the breathtaking landscapes of Kashmir, covering serene valleys, pristine lakes, and lush meadows.",
       "days": 8,
       "night": 7,
       "itinerary": [
         {
           "day": 1,
-          "title": "Srinagar to Sonamarg",
-          "description": "Altitude: 7800 ft | Time Taken: 3 Hrs Drive. The trek begins at Shitkadi, a few kilometers ahead of Sonamarg. Pickup at 2.30 pm from Srinagar. Drive to the base camp takes around 2 hours. Night halt at Sonamarg.",
+          "title": "Srinagar - Aru Campsite",
+          "description": "Drive 94 km from Srinagar to Aru Campsite for acclimatization and a short walk around Aru Valley. Overnight stay at an elevation of 2433m.",
           "icon": "🚖"
         },
         {
           "day": 2,
-          "title": "Sonamarg to Nachnai",
-          "description": "Altitude: 7800 ft to 11,500 ft | Time Taken: 6 hours, 11.6 km. The trek ascends gradually to the tabletop point. Continue hiking past the lunch point, reaching Nachnai campsite by late afternoon.",
+          "title": "Aru Campsite - Lidderwat",
+          "description": "Trek distance: 10 km | Time: 6-7 hours | Altitude gain: 400m | Easy to moderate trek through rolling slopes of Lidder Valley.",
           "icon": "⛺"
         },
         {
           "day": 3,
-          "title": "Nachnai to Vishnusar",
-          "description": "Altitude: 11,500 ft to 12,000 ft | Time Taken: 6 hours, 13.5 km. A gradual ascent to Nichnai Pass (12,000 ft) followed by a descent to the lunch point. A normal walk through meadows leads to Vishnusar Lake campsite.",
+          "title": "Lidderwat - Shekwas",
+          "description": "Trek distance: 6 km | Time: 6-7 hours | Altitude gain: 582m | Gradual ascent followed by a flat stretch, a 20-minute boulder walk, and a river crossing.",
           "icon": "🏞️"
         },
         {
           "day": 4,
-          "title": "Vishnusar Lake to Gadsar",
-          "description": "Altitude: 12,000 ft to 12,500 ft | Time Taken: 5 hours, 16 km. Trek passes through Kishansar Lake and ascends to Gadsar Pass (13,800 ft). Beautiful flower-laden meadows lead to Gadsar Lake and campsite.",
-          "icon": "🌸"
+          "title": "Shekwas to Tarsar Lake",
+          "description": "Trek distance: 5 km | Time: 4 hours | Altitude gain: 430m | Moderate ascent over meadows to reach 3500m before a final incline.",
+          "icon": "🌅"
         },
         {
           "day": 5,
-          "title": "Gadsar to Satsar",
-          "description": "Altitude: 12,500 ft to 12,000 ft | Time Taken: 6 hours, 11.5 km. Cross a river and ascend to a high point offering views of Nanga Parbat. A gradual descent leads to the Satsar campsite near the famous seven lakes.",
+          "title": "Tarsar Lake - Sundersar",
+          "description": "Trek distance: 5 km | Time: 5 hours | Altitude gain: 155m | Steep ascent for 1 hour, descent, and then a gradual climb to Sundersar.",
           "icon": "🏕️"
         },
         {
           "day": 6,
-          "title": "Satsar to Gangabal Twin Lakes",
-          "description": "Altitude: 12,000 ft to 11,500 ft | Time Taken: 6 hours, 9 km. The trail includes a boulder zone and an ascent to the second-highest pass (12,900 ft). Views of four lakes before descending to Nandkul Lake campsite.",
-          "icon": "🏔️"
+          "title": "Sundersar - Lidderwat",
+          "description": "Trek distance: 15 km | Time: 7 hours | Elevation loss: 800m | Gradual descent through Tarsar and Homwas valley. Some rough patches.",
+          "icon": "⛰️"
         },
         {
           "day": 7,
-          "title": "Buffer Day",
-          "description": "A rest day at Gangabal Lake. Enjoy optional activities like exploration and relaxation in the beautiful surroundings.",
+          "title": "Lidderwat - Aru - Srinagar",
+          "description": "Trek distance: 10 km | Time: 8 hours | Elevation loss: 582m | Descend through Lidder Valley slopes along Lidder River. 3-hour drive to Srinagar.",
           "icon": "🌿"
         },
         {
           "day": 8,
-          "title": "Gangabal to Naranag",
-          "description": "Altitude: 11,500 ft to 7,450 ft | Time Taken: 6 hours, 13 km. A steep descent leads to Naranag. Option to stay at Sonmarg or Srinagar, depending on departure.",
-          "icon": "⛰️"
+          "title": "Buffer Day",
+          "description": "Reserved for contingencies such as weather delays.",
+          "icon": "📅"
         }
       ],
       "inclusions": [
@@ -362,7 +362,7 @@
         "Stay and food at Srinagar.",
         "Backpack carrying service."
       ],
-      "price": 35000
+      "price": 20000
     }
   ],
   "jammu": [

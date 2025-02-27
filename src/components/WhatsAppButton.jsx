@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
     // Replace the number below with your own WhatsApp number
     const phoneNumber = '1234567890'; // Add your phone number
     const message = 'Hello, I have a query about the Travel Packages!';
-    const whatsappURL = `https://wa.me/${+918491926174}?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/${+919596319497}?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappURL, '_blank');
   };
