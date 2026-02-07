@@ -11,7 +11,7 @@ const Destinations = () => {
     {
       name: "Dal Lake",
       image:
-        "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSK_6hCnobRdY2fYeMG_sKGKbTrp9DzF12jXLazWmGpT3cXYa06uYq8vk7DZqViJaigcqJgtxSRs4ieHo6nFTXpw-yrJcO_XAhem6mm0Q",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQazdH8AMGReuMYqjNOkvF4A9NEZTUuOwM6Ag&s",
       description:
         "A stunning freshwater lake in Srinagar, known for its houseboats and Shikara rides.",
     },

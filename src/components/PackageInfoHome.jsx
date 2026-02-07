@@ -13,7 +13,7 @@ const packages = [
   {
     id: 'jammu',
     title: 'Jammu',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrytvLpDBdvTA1cNxA0DN19JEKeJfr4aA_gw&s',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMahvNJi2liudMfssW_NMP2W8eiYvnYznCCg&s',
     description: 'Experience the spiritual and natural wonders of Jammu.',
   },
   {
